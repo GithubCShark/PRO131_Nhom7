@@ -31,13 +31,13 @@ namespace GUI_QLChiTieu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmMain));
             this.panelMain = new System.Windows.Forms.Panel();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
+            this.btnDangXuat = new System.Windows.Forms.Button();
+            this.btnTuyChon = new System.Windows.Forms.Button();
+            this.btnMucTieu = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
+            this.btnChiTieu = new System.Windows.Forms.Button();
+            this.btnThuNhap = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
-            this.button2 = new System.Windows.Forms.Button();
             this.btnBack = new System.Windows.Forms.Button();
             this.panelMain.SuspendLayout();
             this.SuspendLayout();
@@ -45,71 +45,89 @@ namespace GUI_QLChiTieu
             // panelMain
             // 
             this.panelMain.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.panelMain.Controls.Add(this.button7);
-            this.panelMain.Controls.Add(this.button6);
-            this.panelMain.Controls.Add(this.button5);
-            this.panelMain.Controls.Add(this.button4);
-            this.panelMain.Controls.Add(this.button3);
-            this.panelMain.Controls.Add(this.button2);
+            this.panelMain.Controls.Add(this.btnDangXuat);
+            this.panelMain.Controls.Add(this.btnTuyChon);
+            this.panelMain.Controls.Add(this.btnMucTieu);
+            this.panelMain.Controls.Add(this.btnThongKe);
+            this.panelMain.Controls.Add(this.btnChiTieu);
+            this.panelMain.Controls.Add(this.btnThuNhap);
             this.panelMain.Location = new System.Drawing.Point(12, 93);
             this.panelMain.Name = "panelMain";
             this.panelMain.Size = new System.Drawing.Size(984, 620);
             this.panelMain.TabIndex = 0;
             // 
-            // button7
+            // btnDangXuat
             // 
-            this.button7.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button7.Location = new System.Drawing.Point(738, 320);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(174, 123);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Đăng Xuất";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnDangXuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnDangXuat.Image = global::GUI_QLChiTieu.Properties.Resources.logout;
+            this.btnDangXuat.Location = new System.Drawing.Point(738, 320);
+            this.btnDangXuat.Name = "btnDangXuat";
+            this.btnDangXuat.Size = new System.Drawing.Size(174, 123);
+            this.btnDangXuat.TabIndex = 6;
+            this.btnDangXuat.Text = "Đăng Xuất";
+            this.btnDangXuat.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnDangXuat.UseVisualStyleBackColor = true;
             // 
-            // button6
+            // btnTuyChon
             // 
-            this.button6.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button6.Location = new System.Drawing.Point(409, 320);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(174, 123);
-            this.button6.TabIndex = 5;
-            this.button6.Text = "Tùy Chọn";
-            this.button6.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button6.UseVisualStyleBackColor = true;
+            this.btnTuyChon.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnTuyChon.Image = global::GUI_QLChiTieu.Properties.Resources.options;
+            this.btnTuyChon.Location = new System.Drawing.Point(409, 320);
+            this.btnTuyChon.Name = "btnTuyChon";
+            this.btnTuyChon.Size = new System.Drawing.Size(174, 123);
+            this.btnTuyChon.TabIndex = 5;
+            this.btnTuyChon.Text = "Tùy Chọn";
+            this.btnTuyChon.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnTuyChon.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnMucTieu
             // 
-            this.button5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button5.Location = new System.Drawing.Point(79, 320);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(174, 123);
-            this.button5.TabIndex = 4;
-            this.button5.Text = "Đặt Mục TIêu";
-            this.button5.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnMucTieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnMucTieu.Image = global::GUI_QLChiTieu.Properties.Resources.target;
+            this.btnMucTieu.Location = new System.Drawing.Point(79, 320);
+            this.btnMucTieu.Name = "btnMucTieu";
+            this.btnMucTieu.Size = new System.Drawing.Size(174, 123);
+            this.btnMucTieu.TabIndex = 4;
+            this.btnMucTieu.Text = "Đặt Mục TIêu";
+            this.btnMucTieu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnMucTieu.UseVisualStyleBackColor = true;
             // 
-            // button4
+            // btnThongKe
             // 
-            this.button4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button4.Location = new System.Drawing.Point(738, 123);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(174, 123);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "Thống Kê";
-            this.button4.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button4.UseVisualStyleBackColor = true;
+            this.btnThongKe.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThongKe.Image = global::GUI_QLChiTieu.Properties.Resources.thongKe;
+            this.btnThongKe.Location = new System.Drawing.Point(738, 123);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(174, 123);
+            this.btnThongKe.TabIndex = 3;
+            this.btnThongKe.Text = "Thống Kê";
+            this.btnThongKe.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThongKe.UseVisualStyleBackColor = true;
             // 
-            // button3
+            // btnChiTieu
             // 
-            this.button3.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button3.Location = new System.Drawing.Point(409, 123);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(174, 123);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "Chi Tiêu";
-            this.button3.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button3.UseVisualStyleBackColor = true;
+            this.btnChiTieu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnChiTieu.Image = global::GUI_QLChiTieu.Properties.Resources.pay;
+            this.btnChiTieu.Location = new System.Drawing.Point(409, 123);
+            this.btnChiTieu.Name = "btnChiTieu";
+            this.btnChiTieu.Size = new System.Drawing.Size(174, 123);
+            this.btnChiTieu.TabIndex = 2;
+            this.btnChiTieu.Text = "Chi Tiêu";
+            this.btnChiTieu.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnChiTieu.UseVisualStyleBackColor = true;
+            // 
+            // btnThuNhap
+            // 
+            this.btnThuNhap.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.btnThuNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnThuNhap.Image = global::GUI_QLChiTieu.Properties.Resources.collection;
+            this.btnThuNhap.Location = new System.Drawing.Point(79, 123);
+            this.btnThuNhap.Name = "btnThuNhap";
+            this.btnThuNhap.Size = new System.Drawing.Size(174, 123);
+            this.btnThuNhap.TabIndex = 1;
+            this.btnThuNhap.Text = "Thu Nhập";
+            this.btnThuNhap.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+            this.btnThuNhap.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
@@ -121,18 +139,6 @@ namespace GUI_QLChiTieu
             this.label1.Size = new System.Drawing.Size(330, 31);
             this.label1.TabIndex = 7;
             this.label1.Text = "Quản Lý Chi Tiêu Cá Nhân";
-            // 
-            // button2
-            // 
-            this.button2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.Image = global::GUI_QLChiTieu.Properties.Resources.pay;
-            this.button2.Location = new System.Drawing.Point(79, 123);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(174, 123);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "Thu Nhập";
-            this.button2.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-            this.button2.UseVisualStyleBackColor = true;
             // 
             // btnBack
             // 
@@ -170,12 +176,12 @@ namespace GUI_QLChiTieu
 
         private System.Windows.Forms.Panel panelMain;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button btnDangXuat;
+        private System.Windows.Forms.Button btnTuyChon;
+        private System.Windows.Forms.Button btnMucTieu;
+        private System.Windows.Forms.Button btnThongKe;
+        private System.Windows.Forms.Button btnChiTieu;
+        private System.Windows.Forms.Button btnThuNhap;
         private System.Windows.Forms.Button btnBack;
     }
 }
