@@ -168,6 +168,7 @@ namespace GUI_QLChiTieu
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(200, 25);
             this.txtTenDN.TabIndex = 12;
+            this.txtTenDN.Text = " ";
             // 
             // lblGioiTInh
             // 
