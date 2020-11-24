@@ -41,6 +41,8 @@ namespace GUI_QLChiTieu
             this.txtMKNhapLai = new System.Windows.Forms.TextBox();
             this.btnDangKy = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
+            this.lblTenDN = new System.Windows.Forms.Label();
+            this.txtTenDN = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // lblDangKy
@@ -58,7 +60,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblHoTen.AutoSize = true;
             this.lblHoTen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoTen.Location = new System.Drawing.Point(12, 68);
+            this.lblHoTen.Location = new System.Drawing.Point(12, 134);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(59, 19);
             this.lblHoTen.TabIndex = 1;
@@ -68,7 +70,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(12, 132);
+            this.lblEmail.Location = new System.Drawing.Point(12, 198);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(47, 19);
             this.lblEmail.TabIndex = 2;
@@ -78,7 +80,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblMatKhau.AutoSize = true;
             this.lblMatKhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatKhau.Location = new System.Drawing.Point(12, 203);
+            this.lblMatKhau.Location = new System.Drawing.Point(12, 269);
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(118, 19);
             this.lblMatKhau.TabIndex = 3;
@@ -88,7 +90,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblNhapLai.AutoSize = true;
             this.lblNhapLai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNhapLai.Location = new System.Drawing.Point(12, 269);
+            this.lblNhapLai.Location = new System.Drawing.Point(12, 335);
             this.lblNhapLai.Name = "lblNhapLai";
             this.lblNhapLai.Size = new System.Drawing.Size(144, 19);
             this.lblNhapLai.TabIndex = 4;
@@ -96,7 +98,7 @@ namespace GUI_QLChiTieu
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(12, 89);
+            this.txtHoTen.Location = new System.Drawing.Point(12, 155);
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(260, 30);
@@ -104,7 +106,7 @@ namespace GUI_QLChiTieu
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(12, 153);
+            this.txtEmail.Location = new System.Drawing.Point(12, 219);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(260, 30);
@@ -112,7 +114,7 @@ namespace GUI_QLChiTieu
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(12, 224);
+            this.txtMatKhau.Location = new System.Drawing.Point(12, 290);
             this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(260, 30);
@@ -120,7 +122,7 @@ namespace GUI_QLChiTieu
             // 
             // txtMKNhapLai
             // 
-            this.txtMKNhapLai.Location = new System.Drawing.Point(12, 291);
+            this.txtMKNhapLai.Location = new System.Drawing.Point(12, 357);
             this.txtMKNhapLai.Multiline = true;
             this.txtMKNhapLai.Name = "txtMKNhapLai";
             this.txtMKNhapLai.Size = new System.Drawing.Size(260, 30);
@@ -129,7 +131,7 @@ namespace GUI_QLChiTieu
             // btnDangKy
             // 
             this.btnDangKy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangKy.Location = new System.Drawing.Point(12, 359);
+            this.btnDangKy.Location = new System.Drawing.Point(12, 409);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(120, 40);
             this.btnDangKy.TabIndex = 9;
@@ -139,18 +141,38 @@ namespace GUI_QLChiTieu
             // btnHuy
             // 
             this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(152, 359);
+            this.btnHuy.Location = new System.Drawing.Point(152, 409);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(120, 40);
             this.btnHuy.TabIndex = 10;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
+            // lblTenDN
+            // 
+            this.lblTenDN.AutoSize = true;
+            this.lblTenDN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTenDN.Location = new System.Drawing.Point(12, 69);
+            this.lblTenDN.Name = "lblTenDN";
+            this.lblTenDN.Size = new System.Drawing.Size(115, 19);
+            this.lblTenDN.TabIndex = 11;
+            this.lblTenDN.Text = "Tên Đăng Nhập";
+            // 
+            // txtTenDN
+            // 
+            this.txtTenDN.Location = new System.Drawing.Point(12, 91);
+            this.txtTenDN.Multiline = true;
+            this.txtTenDN.Name = "txtTenDN";
+            this.txtTenDN.Size = new System.Drawing.Size(260, 30);
+            this.txtTenDN.TabIndex = 12;
+            // 
             // FrmDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 411);
+            this.ClientSize = new System.Drawing.Size(284, 461);
+            this.Controls.Add(this.txtTenDN);
+            this.Controls.Add(this.lblTenDN);
             this.Controls.Add(this.btnHuy);
             this.Controls.Add(this.btnDangKy);
             this.Controls.Add(this.txtMKNhapLai);
@@ -186,5 +208,7 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.TextBox txtMKNhapLai;
         private System.Windows.Forms.Button btnDangKy;
         private System.Windows.Forms.Button btnHuy;
+        private System.Windows.Forms.Label lblTenDN;
+        private System.Windows.Forms.TextBox txtTenDN;
     }
 }
