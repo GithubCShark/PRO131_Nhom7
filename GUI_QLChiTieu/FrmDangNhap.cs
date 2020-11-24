@@ -16,5 +16,17 @@ namespace GUI_QLChiTieu
         {
             InitializeComponent();
         }
+
+        private void ckboxShowHidePass_CheckedChanged(object sender, EventArgs e)
+        {
+            if (ckboxShowHidePass.Checked)
+            {
+                txtMatKhau.UseSystemPasswordChar = true;
+            }
+            else
+            {
+                txtMatKhau.UseSystemPasswordChar = false;
+            }
+        }
     }
 }

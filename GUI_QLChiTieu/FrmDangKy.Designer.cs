@@ -43,6 +43,9 @@ namespace GUI_QLChiTieu
             this.btnHuy = new System.Windows.Forms.Button();
             this.lblTenDN = new System.Windows.Forms.Label();
             this.txtTenDN = new System.Windows.Forms.TextBox();
+            this.lblGioiTInh = new System.Windows.Forms.Label();
+            this.rdbtnNam = new System.Windows.Forms.RadioButton();
+            this.rdbtnNu = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // lblDangKy
@@ -50,7 +53,7 @@ namespace GUI_QLChiTieu
             this.lblDangKy.AutoSize = true;
             this.lblDangKy.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDangKy.ForeColor = System.Drawing.Color.DodgerBlue;
-            this.lblDangKy.Location = new System.Drawing.Point(81, 18);
+            this.lblDangKy.Location = new System.Drawing.Point(140, 19);
             this.lblDangKy.Name = "lblDangKy";
             this.lblDangKy.Size = new System.Drawing.Size(114, 31);
             this.lblDangKy.TabIndex = 0;
@@ -60,7 +63,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblHoTen.AutoSize = true;
             this.lblHoTen.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblHoTen.Location = new System.Drawing.Point(12, 134);
+            this.lblHoTen.Location = new System.Drawing.Point(13, 128);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(59, 19);
             this.lblHoTen.TabIndex = 1;
@@ -70,7 +73,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblEmail.AutoSize = true;
             this.lblEmail.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblEmail.Location = new System.Drawing.Point(12, 198);
+            this.lblEmail.Location = new System.Drawing.Point(13, 174);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(47, 19);
             this.lblEmail.TabIndex = 2;
@@ -80,7 +83,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblMatKhau.AutoSize = true;
             this.lblMatKhau.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMatKhau.Location = new System.Drawing.Point(12, 269);
+            this.lblMatKhau.Location = new System.Drawing.Point(13, 224);
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(118, 19);
             this.lblMatKhau.TabIndex = 3;
@@ -90,7 +93,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblNhapLai.AutoSize = true;
             this.lblNhapLai.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNhapLai.Location = new System.Drawing.Point(12, 335);
+            this.lblNhapLai.Location = new System.Drawing.Point(13, 276);
             this.lblNhapLai.Name = "lblNhapLai";
             this.lblNhapLai.Size = new System.Drawing.Size(144, 19);
             this.lblNhapLai.TabIndex = 4;
@@ -98,40 +101,40 @@ namespace GUI_QLChiTieu
             // 
             // txtHoTen
             // 
-            this.txtHoTen.Location = new System.Drawing.Point(12, 155);
+            this.txtHoTen.Location = new System.Drawing.Point(172, 125);
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
-            this.txtHoTen.Size = new System.Drawing.Size(260, 30);
+            this.txtHoTen.Size = new System.Drawing.Size(200, 25);
             this.txtHoTen.TabIndex = 5;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(12, 219);
+            this.txtEmail.Location = new System.Drawing.Point(172, 171);
             this.txtEmail.Multiline = true;
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(260, 30);
+            this.txtEmail.Size = new System.Drawing.Size(200, 25);
             this.txtEmail.TabIndex = 6;
             // 
             // txtMatKhau
             // 
-            this.txtMatKhau.Location = new System.Drawing.Point(12, 290);
+            this.txtMatKhau.Location = new System.Drawing.Point(172, 221);
             this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
-            this.txtMatKhau.Size = new System.Drawing.Size(260, 30);
+            this.txtMatKhau.Size = new System.Drawing.Size(200, 25);
             this.txtMatKhau.TabIndex = 7;
             // 
             // txtMKNhapLai
             // 
-            this.txtMKNhapLai.Location = new System.Drawing.Point(12, 357);
+            this.txtMKNhapLai.Location = new System.Drawing.Point(172, 273);
             this.txtMKNhapLai.Multiline = true;
             this.txtMKNhapLai.Name = "txtMKNhapLai";
-            this.txtMKNhapLai.Size = new System.Drawing.Size(260, 30);
+            this.txtMKNhapLai.Size = new System.Drawing.Size(200, 25);
             this.txtMKNhapLai.TabIndex = 8;
             // 
             // btnDangKy
             // 
             this.btnDangKy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangKy.Location = new System.Drawing.Point(12, 409);
+            this.btnDangKy.Location = new System.Drawing.Point(36, 391);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(120, 40);
             this.btnDangKy.TabIndex = 9;
@@ -141,7 +144,7 @@ namespace GUI_QLChiTieu
             // btnHuy
             // 
             this.btnHuy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnHuy.Location = new System.Drawing.Point(152, 409);
+            this.btnHuy.Location = new System.Drawing.Point(217, 391);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(120, 40);
             this.btnHuy.TabIndex = 10;
@@ -152,7 +155,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblTenDN.AutoSize = true;
             this.lblTenDN.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTenDN.Location = new System.Drawing.Point(12, 69);
+            this.lblTenDN.Location = new System.Drawing.Point(13, 77);
             this.lblTenDN.Name = "lblTenDN";
             this.lblTenDN.Size = new System.Drawing.Size(115, 19);
             this.lblTenDN.TabIndex = 11;
@@ -160,17 +163,52 @@ namespace GUI_QLChiTieu
             // 
             // txtTenDN
             // 
-            this.txtTenDN.Location = new System.Drawing.Point(12, 91);
+            this.txtTenDN.Location = new System.Drawing.Point(172, 77);
             this.txtTenDN.Multiline = true;
             this.txtTenDN.Name = "txtTenDN";
-            this.txtTenDN.Size = new System.Drawing.Size(260, 30);
+            this.txtTenDN.Size = new System.Drawing.Size(200, 25);
             this.txtTenDN.TabIndex = 12;
+            // 
+            // lblGioiTInh
+            // 
+            this.lblGioiTInh.AutoSize = true;
+            this.lblGioiTInh.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblGioiTInh.Location = new System.Drawing.Point(14, 323);
+            this.lblGioiTInh.Name = "lblGioiTInh";
+            this.lblGioiTInh.Size = new System.Drawing.Size(72, 19);
+            this.lblGioiTInh.TabIndex = 13;
+            this.lblGioiTInh.Text = "Giới Tính";
+            // 
+            // rdbtnNam
+            // 
+            this.rdbtnNam.AutoSize = true;
+            this.rdbtnNam.Location = new System.Drawing.Point(172, 321);
+            this.rdbtnNam.Name = "rdbtnNam";
+            this.rdbtnNam.Size = new System.Drawing.Size(57, 23);
+            this.rdbtnNam.TabIndex = 14;
+            this.rdbtnNam.TabStop = true;
+            this.rdbtnNam.Text = "Nam";
+            this.rdbtnNam.UseVisualStyleBackColor = true;
+            // 
+            // rdbtnNu
+            // 
+            this.rdbtnNu.AutoSize = true;
+            this.rdbtnNu.Location = new System.Drawing.Point(268, 321);
+            this.rdbtnNu.Name = "rdbtnNu";
+            this.rdbtnNu.Size = new System.Drawing.Size(48, 23);
+            this.rdbtnNu.TabIndex = 15;
+            this.rdbtnNu.TabStop = true;
+            this.rdbtnNu.Text = "Nữ";
+            this.rdbtnNu.UseVisualStyleBackColor = true;
             // 
             // FrmDangKy
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 461);
+            this.ClientSize = new System.Drawing.Size(384, 461);
+            this.Controls.Add(this.rdbtnNu);
+            this.Controls.Add(this.rdbtnNam);
+            this.Controls.Add(this.lblGioiTInh);
             this.Controls.Add(this.txtTenDN);
             this.Controls.Add(this.lblTenDN);
             this.Controls.Add(this.btnHuy);
@@ -210,5 +248,8 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Label lblTenDN;
         private System.Windows.Forms.TextBox txtTenDN;
+        private System.Windows.Forms.Label lblGioiTInh;
+        private System.Windows.Forms.RadioButton rdbtnNam;
+        private System.Windows.Forms.RadioButton rdbtnNu;
     }
 }

@@ -39,6 +39,7 @@ namespace GUI_QLChiTieu
             this.lnklblDangKy = new System.Windows.Forms.LinkLabel();
             this.btnDangNhap = new System.Windows.Forms.Button();
             this.btnThoat = new System.Windows.Forms.Button();
+            this.ckboxShowHidePass = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // lblDangNhap
@@ -96,7 +97,7 @@ namespace GUI_QLChiTieu
             // 
             this.lnklblQuenMK.AutoSize = true;
             this.lnklblQuenMK.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblQuenMK.Location = new System.Drawing.Point(8, 237);
+            this.lnklblQuenMK.Location = new System.Drawing.Point(148, 275);
             this.lnklblQuenMK.Name = "lnklblQuenMK";
             this.lnklblQuenMK.Size = new System.Drawing.Size(124, 19);
             this.lnklblQuenMK.TabIndex = 5;
@@ -107,7 +108,7 @@ namespace GUI_QLChiTieu
             // 
             this.lnklblDangKy.AutoSize = true;
             this.lnklblDangKy.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lnklblDangKy.Location = new System.Drawing.Point(205, 237);
+            this.lnklblDangKy.Location = new System.Drawing.Point(12, 275);
             this.lnklblDangKy.Name = "lnklblDangKy";
             this.lnklblDangKy.Size = new System.Drawing.Size(67, 19);
             this.lnklblDangKy.TabIndex = 6;
@@ -117,7 +118,7 @@ namespace GUI_QLChiTieu
             // btnDangNhap
             // 
             this.btnDangNhap.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDangNhap.Location = new System.Drawing.Point(12, 297);
+            this.btnDangNhap.Location = new System.Drawing.Point(12, 346);
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(120, 40);
@@ -128,7 +129,7 @@ namespace GUI_QLChiTieu
             // btnThoat
             // 
             this.btnThoat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnThoat.Location = new System.Drawing.Point(152, 297);
+            this.btnThoat.Location = new System.Drawing.Point(152, 346);
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(120, 40);
@@ -136,11 +137,23 @@ namespace GUI_QLChiTieu
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             // 
+            // ckboxShowHidePass
+            // 
+            this.ckboxShowHidePass.AutoSize = true;
+            this.ckboxShowHidePass.Location = new System.Drawing.Point(12, 223);
+            this.ckboxShowHidePass.Name = "ckboxShowHidePass";
+            this.ckboxShowHidePass.Size = new System.Drawing.Size(115, 23);
+            this.ckboxShowHidePass.TabIndex = 9;
+            this.ckboxShowHidePass.Text = "Hiện mật khẩu";
+            this.ckboxShowHidePass.UseVisualStyleBackColor = true;
+            this.ckboxShowHidePass.CheckedChanged += new System.EventHandler(this.ckboxShowHidePass_CheckedChanged);
+            // 
             // FrmDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 361);
+            this.ClientSize = new System.Drawing.Size(284, 411);
+            this.Controls.Add(this.ckboxShowHidePass);
             this.Controls.Add(this.btnThoat);
             this.Controls.Add(this.btnDangNhap);
             this.Controls.Add(this.lnklblDangKy);
@@ -172,5 +185,6 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.LinkLabel lnklblDangKy;
         private System.Windows.Forms.Button btnDangNhap;
         private System.Windows.Forms.Button btnThoat;
+        private System.Windows.Forms.CheckBox ckboxShowHidePass;
     }
 }
