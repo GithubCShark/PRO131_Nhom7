@@ -30,30 +30,30 @@ namespace GUI_QLChiTieu
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmKhoanChi));
-            this.dgvKhoanThu = new System.Windows.Forms.DataGridView();
+            this.dgvKhoanChi = new System.Windows.Forms.DataGridView();
             this.lblTieuDe = new System.Windows.Forms.Label();
             this.lblKhoanChi = new System.Windows.Forms.Label();
             this.lblNgayChi = new System.Windows.Forms.Label();
             this.lblSoTien = new System.Windows.Forms.Label();
             this.lblMoTa = new System.Windows.Forms.Label();
-            this.txtKhoanThu = new System.Windows.Forms.TextBox();
+            this.txtKhoanChi = new System.Windows.Forms.TextBox();
             this.txtSoTien = new System.Windows.Forms.TextBox();
             this.txtMoTa = new System.Windows.Forms.TextBox();
-            this.dtpNgayThu = new System.Windows.Forms.DateTimePicker();
+            this.dtpkNgayChi = new System.Windows.Forms.DateTimePicker();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhoanThu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhoanChi)).BeginInit();
             this.SuspendLayout();
             // 
-            // dgvKhoanThu
+            // dgvKhoanChi
             // 
-            this.dgvKhoanThu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvKhoanThu.Location = new System.Drawing.Point(14, 253);
-            this.dgvKhoanThu.Name = "dgvKhoanThu";
-            this.dgvKhoanThu.Size = new System.Drawing.Size(943, 351);
-            this.dgvKhoanThu.TabIndex = 0;
+            this.dgvKhoanChi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvKhoanChi.Location = new System.Drawing.Point(14, 253);
+            this.dgvKhoanChi.Name = "dgvKhoanChi";
+            this.dgvKhoanChi.Size = new System.Drawing.Size(943, 351);
+            this.dgvKhoanChi.TabIndex = 0;
             // 
             // lblTieuDe
             // 
@@ -106,13 +106,13 @@ namespace GUI_QLChiTieu
             this.lblMoTa.TabIndex = 5;
             this.lblMoTa.Text = "Mô Tả";
             // 
-            // txtKhoanThu
+            // txtKhoanChi
             // 
-            this.txtKhoanThu.Location = new System.Drawing.Point(239, 59);
-            this.txtKhoanThu.Multiline = true;
-            this.txtKhoanThu.Name = "txtKhoanThu";
-            this.txtKhoanThu.Size = new System.Drawing.Size(213, 33);
-            this.txtKhoanThu.TabIndex = 6;
+            this.txtKhoanChi.Location = new System.Drawing.Point(239, 59);
+            this.txtKhoanChi.Multiline = true;
+            this.txtKhoanChi.Name = "txtKhoanChi";
+            this.txtKhoanChi.Size = new System.Drawing.Size(213, 33);
+            this.txtKhoanChi.TabIndex = 6;
             // 
             // txtSoTien
             // 
@@ -130,15 +130,15 @@ namespace GUI_QLChiTieu
             this.txtMoTa.Size = new System.Drawing.Size(255, 75);
             this.txtMoTa.TabIndex = 8;
             // 
-            // dtpNgayThu
+            // dtpkNgayChi
             // 
-            this.dtpNgayThu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayThu.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayThu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpNgayThu.Location = new System.Drawing.Point(239, 136);
-            this.dtpNgayThu.Name = "dtpNgayThu";
-            this.dtpNgayThu.Size = new System.Drawing.Size(213, 26);
-            this.dtpNgayThu.TabIndex = 13;
+            this.dtpkNgayChi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayChi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayChi.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtpkNgayChi.Location = new System.Drawing.Point(239, 136);
+            this.dtpkNgayChi.Name = "dtpkNgayChi";
+            this.dtpkNgayChi.Size = new System.Drawing.Size(213, 26);
+            this.dtpkNgayChi.TabIndex = 13;
             // 
             // btnXoa
             // 
@@ -197,26 +197,26 @@ namespace GUI_QLChiTieu
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 616);
-            this.Controls.Add(this.dtpNgayThu);
+            this.Controls.Add(this.dtpkNgayChi);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnLuu);
             this.Controls.Add(this.btnThem);
             this.Controls.Add(this.txtMoTa);
             this.Controls.Add(this.txtSoTien);
-            this.Controls.Add(this.txtKhoanThu);
+            this.Controls.Add(this.txtKhoanChi);
             this.Controls.Add(this.lblMoTa);
             this.Controls.Add(this.lblSoTien);
             this.Controls.Add(this.lblNgayChi);
             this.Controls.Add(this.lblKhoanChi);
             this.Controls.Add(this.lblTieuDe);
-            this.Controls.Add(this.dgvKhoanThu);
+            this.Controls.Add(this.dgvKhoanChi);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "FrmKhoanChi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KHOẢN CHI";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvKhoanThu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvKhoanChi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -224,19 +224,19 @@ namespace GUI_QLChiTieu
 
         #endregion
 
-        private System.Windows.Forms.DataGridView dgvKhoanThu;
+        private System.Windows.Forms.DataGridView dgvKhoanChi;
         private System.Windows.Forms.Label lblTieuDe;
         private System.Windows.Forms.Label lblKhoanChi;
         private System.Windows.Forms.Label lblNgayChi;
         private System.Windows.Forms.Label lblSoTien;
         private System.Windows.Forms.Label lblMoTa;
-        private System.Windows.Forms.TextBox txtKhoanThu;
+        private System.Windows.Forms.TextBox txtKhoanChi;
         private System.Windows.Forms.TextBox txtSoTien;
         private System.Windows.Forms.TextBox txtMoTa;
         private System.Windows.Forms.Button btnThem;
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.DateTimePicker dtpNgayThu;
+        private System.Windows.Forms.DateTimePicker dtpkNgayChi;
     }
 }

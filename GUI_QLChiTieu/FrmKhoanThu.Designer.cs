@@ -39,7 +39,7 @@ namespace GUI_QLChiTieu
             this.txtKhoanThu = new System.Windows.Forms.TextBox();
             this.txtSoTien = new System.Windows.Forms.TextBox();
             this.txtMoTa = new System.Windows.Forms.TextBox();
-            this.dtpNgayThu = new System.Windows.Forms.DateTimePicker();
+            this.dtpkNgayThu = new System.Windows.Forms.DateTimePicker();
             this.btnXoa = new System.Windows.Forms.Button();
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
@@ -130,15 +130,15 @@ namespace GUI_QLChiTieu
             this.txtMoTa.Size = new System.Drawing.Size(255, 75);
             this.txtMoTa.TabIndex = 8;
             // 
-            // dtpNgayThu
+            // dtpkNgayThu
             // 
-            this.dtpNgayThu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpNgayThu.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpNgayThu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpNgayThu.Location = new System.Drawing.Point(239, 136);
-            this.dtpNgayThu.Name = "dtpNgayThu";
-            this.dtpNgayThu.Size = new System.Drawing.Size(213, 26);
-            this.dtpNgayThu.TabIndex = 13;
+            this.dtpkNgayThu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayThu.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayThu.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.dtpkNgayThu.Location = new System.Drawing.Point(239, 136);
+            this.dtpkNgayThu.Name = "dtpkNgayThu";
+            this.dtpkNgayThu.Size = new System.Drawing.Size(213, 26);
+            this.dtpkNgayThu.TabIndex = 13;
             // 
             // btnXoa
             // 
@@ -197,7 +197,7 @@ namespace GUI_QLChiTieu
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 616);
-            this.Controls.Add(this.dtpNgayThu);
+            this.Controls.Add(this.dtpkNgayThu);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
             this.Controls.Add(this.btnLuu);
@@ -237,6 +237,6 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
-        private System.Windows.Forms.DateTimePicker dtpNgayThu;
+        private System.Windows.Forms.DateTimePicker dtpkNgayThu;
     }
 }

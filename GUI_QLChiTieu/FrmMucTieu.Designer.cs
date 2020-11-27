@@ -39,7 +39,7 @@ namespace GUI_QLChiTieu
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtMTNgay = new System.Windows.Forms.TextBox();
             this.txMTThang = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.dtpkNgay = new System.Windows.Forms.DateTimePicker();
             this.dgvMucTieu = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMucTieu)).BeginInit();
             this.SuspendLayout();
@@ -138,14 +138,14 @@ namespace GUI_QLChiTieu
             this.txMTThang.Size = new System.Drawing.Size(190, 26);
             this.txMTThang.TabIndex = 8;
             // 
-            // dateTimePicker1
+            // dtpkNgay
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(297, 225);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(190, 26);
-            this.dateTimePicker1.TabIndex = 9;
+            this.dtpkNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgay.Location = new System.Drawing.Point(297, 225);
+            this.dtpkNgay.Name = "dtpkNgay";
+            this.dtpkNgay.Size = new System.Drawing.Size(190, 26);
+            this.dtpkNgay.TabIndex = 9;
             // 
             // dgvMucTieu
             // 
@@ -161,7 +161,7 @@ namespace GUI_QLChiTieu
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 616);
             this.Controls.Add(this.dgvMucTieu);
-            this.Controls.Add(this.dateTimePicker1);
+            this.Controls.Add(this.dtpkNgay);
             this.Controls.Add(this.txMTThang);
             this.Controls.Add(this.txtMTNgay);
             this.Controls.Add(this.btnXoa);
@@ -173,7 +173,7 @@ namespace GUI_QLChiTieu
             this.Controls.Add(this.lblTieuDe);
             this.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FrmMucTieu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MỤC TIÊU";
@@ -194,7 +194,7 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.TextBox txtMTNgay;
         private System.Windows.Forms.TextBox txMTThang;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.DateTimePicker dtpkNgay;
         private System.Windows.Forms.DataGridView dgvMucTieu;
     }
 }

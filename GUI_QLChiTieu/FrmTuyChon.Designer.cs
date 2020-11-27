@@ -48,7 +48,7 @@ namespace GUI_QLChiTieu
             this.tabPageXuatFile = new System.Windows.Forms.TabPage();
             this.btnXuatFile = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
-            this.dtpThangXuat = new System.Windows.Forms.DateTimePicker();
+            this.dtpkThangXuat = new System.Windows.Forms.DateTimePicker();
             this.btnThoat = new System.Windows.Forms.Button();
             this.tabCtrlTuyChon.SuspendLayout();
             this.tabPageDoiTien.SuspendLayout();
@@ -213,7 +213,7 @@ namespace GUI_QLChiTieu
             // 
             this.tabPageXuatFile.Controls.Add(this.btnXuatFile);
             this.tabPageXuatFile.Controls.Add(this.label4);
-            this.tabPageXuatFile.Controls.Add(this.dtpThangXuat);
+            this.tabPageXuatFile.Controls.Add(this.dtpkThangXuat);
             this.tabPageXuatFile.Location = new System.Drawing.Point(4, 28);
             this.tabPageXuatFile.Name = "tabPageXuatFile";
             this.tabPageXuatFile.Padding = new System.Windows.Forms.Padding(3);
@@ -242,15 +242,15 @@ namespace GUI_QLChiTieu
             this.label4.TabIndex = 1;
             this.label4.Text = "Chọn Tháng Xuất";
             // 
-            // dtpThangXuat
+            // dtpkThangXuat
             // 
-            this.dtpThangXuat.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpThangXuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpThangXuat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpThangXuat.Location = new System.Drawing.Point(75, 116);
-            this.dtpThangXuat.Name = "dtpThangXuat";
-            this.dtpThangXuat.Size = new System.Drawing.Size(200, 26);
-            this.dtpThangXuat.TabIndex = 0;
+            this.dtpkThangXuat.CalendarFont = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkThangXuat.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkThangXuat.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkThangXuat.Location = new System.Drawing.Point(75, 116);
+            this.dtpkThangXuat.Name = "dtpkThangXuat";
+            this.dtpkThangXuat.Size = new System.Drawing.Size(200, 26);
+            this.dtpkThangXuat.TabIndex = 0;
             // 
             // btnThoat
             // 
@@ -306,7 +306,7 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dtpThangXuat;
+        private System.Windows.Forms.DateTimePicker dtpkThangXuat;
         private System.Windows.Forms.Button btnXuatFile;
     }
 }
