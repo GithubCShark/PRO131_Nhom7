@@ -16,7 +16,7 @@ namespace DTO_QLChiTieu
         private string moTa;
         private string email;
 
-        public string MaNT
+        public string MaMT
         {
             get
             {

@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GUI_QLChiTieu", "GUI_QLChiT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DTO_QLChiTieu", "DTO_QLChiTieu\DTO_QLChiTieu.csproj", "{B6266D53-5226-4995-BEC4-158359AC1B82}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL_QLChiTieu", "DAL_QLChiTieu\DAL_QLChiTieu.csproj", "{F2C00527-2864-4159-966D-F93C51D75388}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BUS_QLChiTieu", "BUS_QLChiTieu\BUS_QLChiTieu.csproj", "{A8596E64-6A58-4707-B9ED-EC03D8CADCF7}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +25,14 @@ Global
 		{B6266D53-5226-4995-BEC4-158359AC1B82}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B6266D53-5226-4995-BEC4-158359AC1B82}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B6266D53-5226-4995-BEC4-158359AC1B82}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F2C00527-2864-4159-966D-F93C51D75388}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F2C00527-2864-4159-966D-F93C51D75388}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F2C00527-2864-4159-966D-F93C51D75388}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F2C00527-2864-4159-966D-F93C51D75388}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A8596E64-6A58-4707-B9ED-EC03D8CADCF7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A8596E64-6A58-4707-B9ED-EC03D8CADCF7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A8596E64-6A58-4707-B9ED-EC03D8CADCF7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A8596E64-6A58-4707-B9ED-EC03D8CADCF7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

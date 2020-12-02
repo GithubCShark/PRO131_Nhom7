@@ -184,5 +184,15 @@
   <ItemGroup>
     <None Include="Resources\edit.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS_QLChiTieu\BUS_QLChiTieu.csproj">
+      <Project>{a8596e64-6a58-4707-b9ed-ec03d8cadcf7}</Project>
+      <Name>BUS_QLChiTieu</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO_QLChiTieu\DTO_QLChiTieu.csproj">
+      <Project>{b6266d53-5226-4995-bec4-158359ac1b82}</Project>
+      <Name>DTO_QLChiTieu</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
