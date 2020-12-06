@@ -106,5 +106,45 @@ namespace DAL_QLChiTieu
                 _conn.Close();
             }
         }
+
+        public DataTable getKhoanThuNgay(DateTime ngay)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "DahSachKhoanThuNgay";
+                cmd.Parameters.AddWithValue("ngay", ngay);
+                DataTable dtKTNgay = new DataTable();
+                dtKTNgay.Load(cmd.ExecuteReader());
+                return dtKTNgay;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
+
+        public DataTable getKhoanThuThang(DateTime thang)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "DahSachKhoanThuThang";
+                cmd.Parameters.AddWithValue("ngay", thang);
+                DataTable dtKTThang = new DataTable();
+                dtKTThang.Load(cmd.ExecuteReader());
+                return dtKTThang;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
     }
 }

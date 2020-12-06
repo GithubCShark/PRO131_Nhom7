@@ -75,6 +75,7 @@ namespace GUI_QLChiTieu
             this.btnDongY.TabIndex = 3;
             this.btnDongY.Text = "Đồng Ý";
             this.btnDongY.UseVisualStyleBackColor = true;
+            this.btnDongY.Click += new System.EventHandler(this.btnDongY_Click);
             // 
             // btnHuy
             // 
@@ -85,6 +86,7 @@ namespace GUI_QLChiTieu
             this.btnHuy.TabIndex = 4;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
+            this.btnHuy.Click += new System.EventHandler(this.btnHuy_Click);
             // 
             // FrmQuenMatKhau
             // 

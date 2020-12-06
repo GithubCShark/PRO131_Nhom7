@@ -17,6 +17,8 @@ namespace GUI_QLChiTieu
             InitializeComponent();
         }
 
+        public static string mail;
+
         private void btnThuNhap_Click(object sender, EventArgs e)
         {
             this.panelMain.Controls.Clear();
