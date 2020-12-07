@@ -42,15 +42,15 @@ namespace GUI_QLChiTieu
             user.MatKhau = busNguoiDung.encryption(txtMatKhau.Text);
             if (busNguoiDung.NguoiDungDangNhap(user))
             {
-                FrmMain.mail = user.Email;
-                DataTable dt = busNguoiDung.EmailNguoiDung(user.Email);
+                DataTable dt = busNguoiDung.EmailNguoiDung(user.TenDangNhap);
                 email = dt.Rows[0][0].ToString();
+                FrmMain.mail = email;
                 MessageBox.Show("Đăng nhập thành công");
-
-                this.Close();
 
                 FrmMain main = new FrmMain();
                 main.Show();
+
+                this.Hide();
             }
             else
             {

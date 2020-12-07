@@ -70,5 +70,10 @@ namespace GUI_QLChiTieu
             mucTieu.Dock = DockStyle.Fill;
             mucTieu.Show();
         }
+
+        private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

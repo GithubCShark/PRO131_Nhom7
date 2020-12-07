@@ -177,6 +177,7 @@ namespace GUI_QLChiTieu
             this.Name = "FrmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "QUẢN LÝ CHI TIÊU CÁ NHÂN";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmMain_FormClosed);
             this.panelMain.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();

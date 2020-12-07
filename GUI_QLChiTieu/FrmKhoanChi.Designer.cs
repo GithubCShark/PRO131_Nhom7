@@ -44,11 +44,14 @@ namespace GUI_QLChiTieu
             this.btnSua = new System.Windows.Forms.Button();
             this.btnLuu = new System.Windows.Forms.Button();
             this.btnThem = new System.Windows.Forms.Button();
+            this.txtMaKC = new System.Windows.Forms.TextBox();
+            this.lblMaKC = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoanChi)).BeginInit();
             this.SuspendLayout();
             // 
             // dgvKhoanChi
             // 
+            this.dgvKhoanChi.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvKhoanChi.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvKhoanChi.Location = new System.Drawing.Point(14, 253);
             this.dgvKhoanChi.Name = "dgvKhoanChi";
@@ -70,7 +73,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblKhoanChi.AutoSize = true;
             this.lblKhoanChi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblKhoanChi.Location = new System.Drawing.Point(76, 59);
+            this.lblKhoanChi.Location = new System.Drawing.Point(76, 113);
             this.lblKhoanChi.Name = "lblKhoanChi";
             this.lblKhoanChi.Size = new System.Drawing.Size(110, 19);
             this.lblKhoanChi.TabIndex = 2;
@@ -80,7 +83,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblNgayChi.AutoSize = true;
             this.lblNgayChi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayChi.Location = new System.Drawing.Point(76, 136);
+            this.lblNgayChi.Location = new System.Drawing.Point(76, 168);
             this.lblNgayChi.Name = "lblNgayChi";
             this.lblNgayChi.Size = new System.Drawing.Size(72, 19);
             this.lblNgayChi.TabIndex = 3;
@@ -90,7 +93,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblSoTien.AutoSize = true;
             this.lblSoTien.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoTien.Location = new System.Drawing.Point(76, 206);
+            this.lblSoTien.Location = new System.Drawing.Point(76, 214);
             this.lblSoTien.Name = "lblSoTien";
             this.lblSoTien.Size = new System.Drawing.Size(60, 19);
             this.lblSoTien.TabIndex = 4;
@@ -108,18 +111,18 @@ namespace GUI_QLChiTieu
             // 
             // txtKhoanChi
             // 
-            this.txtKhoanChi.Location = new System.Drawing.Point(239, 59);
+            this.txtKhoanChi.Location = new System.Drawing.Point(239, 113);
             this.txtKhoanChi.Multiline = true;
             this.txtKhoanChi.Name = "txtKhoanChi";
-            this.txtKhoanChi.Size = new System.Drawing.Size(213, 33);
+            this.txtKhoanChi.Size = new System.Drawing.Size(210, 30);
             this.txtKhoanChi.TabIndex = 6;
             // 
             // txtSoTien
             // 
-            this.txtSoTien.Location = new System.Drawing.Point(239, 203);
+            this.txtSoTien.Location = new System.Drawing.Point(239, 211);
             this.txtSoTien.Multiline = true;
             this.txtSoTien.Name = "txtSoTien";
-            this.txtSoTien.Size = new System.Drawing.Size(213, 33);
+            this.txtSoTien.Size = new System.Drawing.Size(210, 30);
             this.txtSoTien.TabIndex = 7;
             // 
             // txtMoTa
@@ -135,9 +138,9 @@ namespace GUI_QLChiTieu
             this.dtpkNgayChi.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpkNgayChi.Format = System.Windows.Forms.DateTimePickerFormat.Short;
             this.dtpkNgayChi.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.dtpkNgayChi.Location = new System.Drawing.Point(239, 136);
+            this.dtpkNgayChi.Location = new System.Drawing.Point(239, 168);
             this.dtpkNgayChi.Name = "dtpkNgayChi";
-            this.dtpkNgayChi.Size = new System.Drawing.Size(213, 26);
+            this.dtpkNgayChi.Size = new System.Drawing.Size(210, 26);
             this.dtpkNgayChi.TabIndex = 13;
             // 
             // btnXoa
@@ -192,11 +195,31 @@ namespace GUI_QLChiTieu
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = true;
             // 
+            // txtMaKC
+            // 
+            this.txtMaKC.Location = new System.Drawing.Point(239, 59);
+            this.txtMaKC.Multiline = true;
+            this.txtMaKC.Name = "txtMaKC";
+            this.txtMaKC.Size = new System.Drawing.Size(210, 30);
+            this.txtMaKC.TabIndex = 14;
+            // 
+            // lblMaKC
+            // 
+            this.lblMaKC.AutoSize = true;
+            this.lblMaKC.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMaKC.Location = new System.Drawing.Point(76, 62);
+            this.lblMaKC.Name = "lblMaKC";
+            this.lblMaKC.Size = new System.Drawing.Size(108, 19);
+            this.lblMaKC.TabIndex = 15;
+            this.lblMaKC.Text = "Mã Khoản Chi";
+            // 
             // FrmKhoanChi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 616);
+            this.Controls.Add(this.lblMaKC);
+            this.Controls.Add(this.txtMaKC);
             this.Controls.Add(this.dtpkNgayChi);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
@@ -238,5 +261,7 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.DateTimePicker dtpkNgayChi;
+        private System.Windows.Forms.TextBox txtMaKC;
+        private System.Windows.Forms.Label lblMaKC;
     }
 }

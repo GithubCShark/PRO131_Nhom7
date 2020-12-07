@@ -1,4 +1,5 @@
-﻿using DTO_QLChiTieu;
+﻿using DAL_QLChiTieu;
+using DTO_QLChiTieu;
 using System;
 using System.Collections.Generic;
 using System.Data;
@@ -10,7 +11,7 @@ namespace BUS_QLChiTieu
 {
     public class BUS_KhoanThu
     {
-        BUS_KhoanThu dalKhoanThu = new BUS_KhoanThu();
+        DAL_KhoanThu dalKhoanThu = new DAL_KhoanThu();
 
         public bool InsertKhoanThu(DTO_KhoanThu kt)
         {

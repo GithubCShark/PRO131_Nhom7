@@ -20,7 +20,7 @@ namespace DAL_QLChiTieu
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "DangNhap";
-                cmd.Parameters.AddWithValue("tendangnhap", user.Email);
+                cmd.Parameters.AddWithValue("tendangnhap", user.TenDangNhap);
                 cmd.Parameters.AddWithValue("matKhau", user.MatKhau);
 
                 if (Convert.ToInt16(cmd.ExecuteScalar()) > 0)
