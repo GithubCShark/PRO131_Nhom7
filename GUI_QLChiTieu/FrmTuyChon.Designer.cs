@@ -89,7 +89,7 @@ namespace GUI_QLChiTieu
             this.lblDau.Location = new System.Drawing.Point(134, 148);
             this.lblDau.Name = "lblDau";
             this.lblDau.Size = new System.Drawing.Size(29, 31);
-            this.lblDau.TabIndex = 4;
+            this.lblDau.TabIndex = 2;
             this.lblDau.Text = "=";
             // 
             // lblUSD
@@ -99,7 +99,7 @@ namespace GUI_QLChiTieu
             this.lblUSD.Location = new System.Drawing.Point(273, 223);
             this.lblUSD.Name = "lblUSD";
             this.lblUSD.Size = new System.Drawing.Size(41, 19);
-            this.lblUSD.TabIndex = 3;
+            this.lblUSD.TabIndex = 4;
             this.lblUSD.Text = "USD";
             // 
             // lblVND
@@ -109,7 +109,7 @@ namespace GUI_QLChiTieu
             this.lblVND.Location = new System.Drawing.Point(273, 89);
             this.lblVND.Name = "lblVND";
             this.lblVND.Size = new System.Drawing.Size(44, 19);
-            this.lblVND.TabIndex = 2;
+            this.lblVND.TabIndex = 1;
             this.lblVND.Text = "VNĐ";
             // 
             // txtUSD
@@ -118,7 +118,7 @@ namespace GUI_QLChiTieu
             this.txtUSD.Multiline = true;
             this.txtUSD.Name = "txtUSD";
             this.txtUSD.Size = new System.Drawing.Size(170, 30);
-            this.txtUSD.TabIndex = 1;
+            this.txtUSD.TabIndex = 3;
             // 
             // txtVND
             // 
@@ -151,7 +151,7 @@ namespace GUI_QLChiTieu
             this.txtMKNhapLai.Multiline = true;
             this.txtMKNhapLai.Name = "txtMKNhapLai";
             this.txtMKNhapLai.Size = new System.Drawing.Size(200, 30);
-            this.txtMKNhapLai.TabIndex = 6;
+            this.txtMKNhapLai.TabIndex = 5;
             // 
             // txtMKMoi
             // 
@@ -159,7 +159,7 @@ namespace GUI_QLChiTieu
             this.txtMKMoi.Multiline = true;
             this.txtMKMoi.Name = "txtMKMoi";
             this.txtMKMoi.Size = new System.Drawing.Size(200, 30);
-            this.txtMKMoi.TabIndex = 5;
+            this.txtMKMoi.TabIndex = 3;
             // 
             // btnDoiMK
             // 
@@ -167,7 +167,7 @@ namespace GUI_QLChiTieu
             this.btnDoiMK.Location = new System.Drawing.Point(111, 281);
             this.btnDoiMK.Name = "btnDoiMK";
             this.btnDoiMK.Size = new System.Drawing.Size(140, 40);
-            this.btnDoiMK.TabIndex = 3;
+            this.btnDoiMK.TabIndex = 6;
             this.btnDoiMK.Text = "Đổi Mật Khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = true;
             // 
@@ -177,7 +177,7 @@ namespace GUI_QLChiTieu
             this.txtMKCu.Multiline = true;
             this.txtMKCu.Name = "txtMKCu";
             this.txtMKCu.Size = new System.Drawing.Size(200, 30);
-            this.txtMKCu.TabIndex = 4;
+            this.txtMKCu.TabIndex = 1;
             // 
             // label3
             // 
@@ -186,7 +186,7 @@ namespace GUI_QLChiTieu
             this.label3.Location = new System.Drawing.Point(74, 196);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(177, 19);
-            this.label3.TabIndex = 2;
+            this.label3.TabIndex = 4;
             this.label3.Text = "Nhập Lại Mật Khẩu Mới";
             // 
             // label2
@@ -196,7 +196,7 @@ namespace GUI_QLChiTieu
             this.label2.Location = new System.Drawing.Point(74, 114);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(151, 19);
-            this.label2.TabIndex = 1;
+            this.label2.TabIndex = 2;
             this.label2.Text = "Nhập Mật Khẩu Mới";
             // 
             // label1
@@ -239,7 +239,7 @@ namespace GUI_QLChiTieu
             this.label4.Location = new System.Drawing.Point(71, 72);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(126, 19);
-            this.label4.TabIndex = 1;
+            this.label4.TabIndex = 0;
             this.label4.Text = "Chọn Tháng Xuất";
             // 
             // dtpkThangXuat
@@ -250,7 +250,7 @@ namespace GUI_QLChiTieu
             this.dtpkThangXuat.Location = new System.Drawing.Point(75, 116);
             this.dtpkThangXuat.Name = "dtpkThangXuat";
             this.dtpkThangXuat.Size = new System.Drawing.Size(200, 26);
-            this.dtpkThangXuat.TabIndex = 0;
+            this.dtpkThangXuat.TabIndex = 1;
             // 
             // btnThoat
             // 

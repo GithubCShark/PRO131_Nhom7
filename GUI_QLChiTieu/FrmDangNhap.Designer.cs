@@ -80,7 +80,7 @@ namespace GUI_QLChiTieu
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.PasswordChar = '*';
             this.txtMatKhau.Size = new System.Drawing.Size(260, 30);
-            this.txtMatKhau.TabIndex = 3;
+            this.txtMatKhau.TabIndex = 4;
             // 
             // lblMKhau
             // 
@@ -90,7 +90,7 @@ namespace GUI_QLChiTieu
             this.lblMKhau.Location = new System.Drawing.Point(12, 162);
             this.lblMKhau.Name = "lblMKhau";
             this.lblMKhau.Size = new System.Drawing.Size(78, 19);
-            this.lblMKhau.TabIndex = 4;
+            this.lblMKhau.TabIndex = 3;
             this.lblMKhau.Text = "Mật Khẩu";
             // 
             // lnklblQuenMK
@@ -100,7 +100,7 @@ namespace GUI_QLChiTieu
             this.lnklblQuenMK.Location = new System.Drawing.Point(148, 275);
             this.lnklblQuenMK.Name = "lnklblQuenMK";
             this.lnklblQuenMK.Size = new System.Drawing.Size(124, 19);
-            this.lnklblQuenMK.TabIndex = 5;
+            this.lnklblQuenMK.TabIndex = 7;
             this.lnklblQuenMK.TabStop = true;
             this.lnklblQuenMK.Text = "Quên Mật Khẩu ?";
             // 
@@ -122,7 +122,7 @@ namespace GUI_QLChiTieu
             this.btnDangNhap.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnDangNhap.Name = "btnDangNhap";
             this.btnDangNhap.Size = new System.Drawing.Size(120, 40);
-            this.btnDangNhap.TabIndex = 7;
+            this.btnDangNhap.TabIndex = 8;
             this.btnDangNhap.Text = "Đăng Nhập";
             this.btnDangNhap.UseVisualStyleBackColor = true;
             this.btnDangNhap.Click += new System.EventHandler(this.btnDangNhap_Click);
@@ -134,7 +134,7 @@ namespace GUI_QLChiTieu
             this.btnThoat.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.btnThoat.Name = "btnThoat";
             this.btnThoat.Size = new System.Drawing.Size(120, 40);
-            this.btnThoat.TabIndex = 8;
+            this.btnThoat.TabIndex = 9;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
             this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
@@ -145,13 +145,14 @@ namespace GUI_QLChiTieu
             this.ckboxShowHidePass.Location = new System.Drawing.Point(12, 223);
             this.ckboxShowHidePass.Name = "ckboxShowHidePass";
             this.ckboxShowHidePass.Size = new System.Drawing.Size(115, 23);
-            this.ckboxShowHidePass.TabIndex = 9;
+            this.ckboxShowHidePass.TabIndex = 5;
             this.ckboxShowHidePass.Text = "Hiện mật khẩu";
             this.ckboxShowHidePass.UseVisualStyleBackColor = true;
             this.ckboxShowHidePass.CheckedChanged += new System.EventHandler(this.ckboxShowHidePass_CheckedChanged);
             // 
             // FrmDangNhap
             // 
+            this.AcceptButton = this.btnDangNhap;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 411);

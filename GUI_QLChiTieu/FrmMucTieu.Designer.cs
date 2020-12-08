@@ -43,6 +43,8 @@ namespace GUI_QLChiTieu
             this.dgvMucTieu = new System.Windows.Forms.DataGridView();
             this.lblMaMT = new System.Windows.Forms.Label();
             this.txtMaMT = new System.Windows.Forms.TextBox();
+            this.txtMoTa = new System.Windows.Forms.TextBox();
+            this.lblMoTa = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMucTieu)).BeginInit();
             this.SuspendLayout();
             // 
@@ -51,7 +53,7 @@ namespace GUI_QLChiTieu
             this.lblTieuDe.AutoSize = true;
             this.lblTieuDe.Font = new System.Drawing.Font("Times New Roman", 20.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTieuDe.ForeColor = System.Drawing.Color.Red;
-            this.lblTieuDe.Location = new System.Drawing.Point(406, 18);
+            this.lblTieuDe.Location = new System.Drawing.Point(444, 18);
             this.lblTieuDe.Name = "lblTieuDe";
             this.lblTieuDe.Size = new System.Drawing.Size(123, 31);
             this.lblTieuDe.TabIndex = 0;
@@ -64,7 +66,7 @@ namespace GUI_QLChiTieu
             this.lblMTNgay.Location = new System.Drawing.Point(74, 121);
             this.lblMTNgay.Name = "lblMTNgay";
             this.lblMTNgay.Size = new System.Drawing.Size(154, 19);
-            this.lblMTNgay.TabIndex = 1;
+            this.lblMTNgay.TabIndex = 3;
             this.lblMTNgay.Text = "Mục Tiêu Hàng Ngày";
             // 
             // lblMTThang
@@ -74,7 +76,7 @@ namespace GUI_QLChiTieu
             this.lblMTThang.Location = new System.Drawing.Point(74, 174);
             this.lblMTThang.Name = "lblMTThang";
             this.lblMTThang.Size = new System.Drawing.Size(120, 19);
-            this.lblMTThang.TabIndex = 2;
+            this.lblMTThang.TabIndex = 5;
             this.lblMTThang.Text = "Mục Tiêu Tháng";
             // 
             // lblNgay
@@ -84,7 +86,7 @@ namespace GUI_QLChiTieu
             this.lblNgay.Location = new System.Drawing.Point(74, 216);
             this.lblNgay.Name = "lblNgay";
             this.lblNgay.Size = new System.Drawing.Size(45, 19);
-            this.lblNgay.TabIndex = 3;
+            this.lblNgay.TabIndex = 7;
             this.lblNgay.Text = "Ngày";
             // 
             // btnLuu
@@ -92,53 +94,56 @@ namespace GUI_QLChiTieu
             this.btnLuu.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnLuu.Image = global::GUI_QLChiTieu.Properties.Resources.save;
             this.btnLuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnLuu.Location = new System.Drawing.Point(651, 75);
+            this.btnLuu.Location = new System.Drawing.Point(560, 197);
             this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(105, 45);
-            this.btnLuu.TabIndex = 4;
+            this.btnLuu.Size = new System.Drawing.Size(90, 45);
+            this.btnLuu.TabIndex = 11;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnSua
             // 
             this.btnSua.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnSua.Image = global::GUI_QLChiTieu.Properties.Resources.edit;
             this.btnSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnSua.Location = new System.Drawing.Point(651, 134);
+            this.btnSua.Location = new System.Drawing.Point(693, 197);
             this.btnSua.Name = "btnSua";
-            this.btnSua.Size = new System.Drawing.Size(105, 45);
-            this.btnSua.TabIndex = 5;
+            this.btnSua.Size = new System.Drawing.Size(90, 45);
+            this.btnSua.TabIndex = 12;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnXoa
             // 
             this.btnXoa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnXoa.Image = global::GUI_QLChiTieu.Properties.Resources.remove;
             this.btnXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnXoa.Location = new System.Drawing.Point(651, 197);
+            this.btnXoa.Location = new System.Drawing.Point(815, 197);
             this.btnXoa.Name = "btnXoa";
-            this.btnXoa.Size = new System.Drawing.Size(105, 45);
-            this.btnXoa.TabIndex = 6;
+            this.btnXoa.Size = new System.Drawing.Size(90, 45);
+            this.btnXoa.TabIndex = 13;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // txtMTNgay
             // 
             this.txtMTNgay.Location = new System.Drawing.Point(282, 121);
             this.txtMTNgay.Name = "txtMTNgay";
             this.txtMTNgay.Size = new System.Drawing.Size(190, 26);
-            this.txtMTNgay.TabIndex = 7;
+            this.txtMTNgay.TabIndex = 4;
             // 
             // txMTThang
             // 
             this.txMTThang.Location = new System.Drawing.Point(282, 172);
             this.txMTThang.Name = "txMTThang";
             this.txMTThang.Size = new System.Drawing.Size(190, 26);
-            this.txMTThang.TabIndex = 8;
+            this.txMTThang.TabIndex = 6;
             // 
             // dtpkNgay
             // 
@@ -147,7 +152,7 @@ namespace GUI_QLChiTieu
             this.dtpkNgay.Location = new System.Drawing.Point(282, 216);
             this.dtpkNgay.Name = "dtpkNgay";
             this.dtpkNgay.Size = new System.Drawing.Size(190, 26);
-            this.dtpkNgay.TabIndex = 9;
+            this.dtpkNgay.TabIndex = 8;
             // 
             // dgvMucTieu
             // 
@@ -157,6 +162,7 @@ namespace GUI_QLChiTieu
             this.dgvMucTieu.Name = "dgvMucTieu";
             this.dgvMucTieu.Size = new System.Drawing.Size(945, 324);
             this.dgvMucTieu.TabIndex = 10;
+            this.dgvMucTieu.Click += new System.EventHandler(this.dgvMucTieu_Click);
             // 
             // lblMaMT
             // 
@@ -165,7 +171,7 @@ namespace GUI_QLChiTieu
             this.lblMaMT.Location = new System.Drawing.Point(74, 78);
             this.lblMaMT.Name = "lblMaMT";
             this.lblMaMT.Size = new System.Drawing.Size(102, 19);
-            this.lblMaMT.TabIndex = 11;
+            this.lblMaMT.TabIndex = 1;
             this.lblMaMT.Text = "Mã Mục Tiêu";
             // 
             // txtMaMT
@@ -173,13 +179,33 @@ namespace GUI_QLChiTieu
             this.txtMaMT.Location = new System.Drawing.Point(282, 75);
             this.txtMaMT.Name = "txtMaMT";
             this.txtMaMT.Size = new System.Drawing.Size(190, 26);
-            this.txtMaMT.TabIndex = 12;
+            this.txtMaMT.TabIndex = 2;
+            // 
+            // txtMoTa
+            // 
+            this.txtMoTa.Location = new System.Drawing.Point(635, 75);
+            this.txtMoTa.Multiline = true;
+            this.txtMoTa.Name = "txtMoTa";
+            this.txtMoTa.Size = new System.Drawing.Size(270, 100);
+            this.txtMoTa.TabIndex = 10;
+            // 
+            // lblMoTa
+            // 
+            this.lblMoTa.AutoSize = true;
+            this.lblMoTa.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoTa.Location = new System.Drawing.Point(556, 78);
+            this.lblMoTa.Name = "lblMoTa";
+            this.lblMoTa.Size = new System.Drawing.Size(55, 19);
+            this.lblMoTa.TabIndex = 9;
+            this.lblMoTa.Text = "Mô Tả";
             // 
             // FrmMucTieu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(969, 616);
+            this.Controls.Add(this.lblMoTa);
+            this.Controls.Add(this.txtMoTa);
             this.Controls.Add(this.txtMaMT);
             this.Controls.Add(this.lblMaMT);
             this.Controls.Add(this.dgvMucTieu);
@@ -199,6 +225,7 @@ namespace GUI_QLChiTieu
             this.Name = "FrmMucTieu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MỤC TIÊU";
+            this.Load += new System.EventHandler(this.FrmMucTieu_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMucTieu)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -220,5 +247,7 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.DataGridView dgvMucTieu;
         private System.Windows.Forms.Label lblMaMT;
         private System.Windows.Forms.TextBox txtMaMT;
+        private System.Windows.Forms.TextBox txtMoTa;
+        private System.Windows.Forms.Label lblMoTa;
     }
 }

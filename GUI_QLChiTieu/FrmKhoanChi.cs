@@ -32,6 +32,7 @@ namespace GUI_QLChiTieu
             dgvKhoanChi.Columns[4].HeaderText = "Số Tiền";
             dgvKhoanChi.Columns[5].HeaderText = "Mô Tả";
         }
+
         private void ResetValues()
         {
             txtMaKC.Text = null;
@@ -144,10 +145,10 @@ namespace GUI_QLChiTieu
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string maMT = txtMaKC.Text;
+            string maKC = txtMaKC.Text;
             if (MessageBox.Show("Bạn có chắc muốn xóa ?", "Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (busKhoanChi.DeleteKhoanChi(maMT))
+                if (busKhoanChi.DeleteKhoanChi(maKC))
                 {
                     MessageBox.Show("Xóa thành công");
                     ResetValues();
@@ -172,9 +173,9 @@ namespace GUI_QLChiTieu
                 txtSoTien.Enabled = true;
                 txtMoTa.Enabled = true;
 
-                txtMaKC.Text = dgvKhoanChi.CurrentRow.Cells["MaKT"].Value.ToString();
-                txtKhoanChi.Text = dgvKhoanChi.CurrentRow.Cells["TenKT"].Value.ToString();
-                dtpkNgayChi.Value = Convert.ToDateTime(dgvKhoanChi.CurrentRow.Cells["NgayThu"].Value);
+                txtMaKC.Text = dgvKhoanChi.CurrentRow.Cells["MaKC"].Value.ToString();
+                txtKhoanChi.Text = dgvKhoanChi.CurrentRow.Cells["TenKC"].Value.ToString();
+                dtpkNgayChi.Value = Convert.ToDateTime(dgvKhoanChi.CurrentRow.Cells["NgayChi"].Value);
                 txtSoTien.Text = dgvKhoanChi.CurrentRow.Cells["SoTien"].Value.ToString();
                 txtMoTa.Text = dgvKhoanChi.CurrentRow.Cells["MoTa"].Value.ToString();
             }

@@ -66,7 +66,7 @@ namespace GUI_QLChiTieu
             this.lblHoTen.Location = new System.Drawing.Point(13, 128);
             this.lblHoTen.Name = "lblHoTen";
             this.lblHoTen.Size = new System.Drawing.Size(59, 19);
-            this.lblHoTen.TabIndex = 1;
+            this.lblHoTen.TabIndex = 3;
             this.lblHoTen.Text = "Họ Tên";
             // 
             // lblEmail
@@ -76,7 +76,7 @@ namespace GUI_QLChiTieu
             this.lblEmail.Location = new System.Drawing.Point(13, 174);
             this.lblEmail.Name = "lblEmail";
             this.lblEmail.Size = new System.Drawing.Size(47, 19);
-            this.lblEmail.TabIndex = 2;
+            this.lblEmail.TabIndex = 5;
             this.lblEmail.Text = "Email";
             // 
             // lblMatKhau
@@ -86,7 +86,7 @@ namespace GUI_QLChiTieu
             this.lblMatKhau.Location = new System.Drawing.Point(13, 224);
             this.lblMatKhau.Name = "lblMatKhau";
             this.lblMatKhau.Size = new System.Drawing.Size(118, 19);
-            this.lblMatKhau.TabIndex = 3;
+            this.lblMatKhau.TabIndex = 7;
             this.lblMatKhau.Text = "Nhập Mật Khẩu";
             // 
             // lblNhapLai
@@ -96,7 +96,7 @@ namespace GUI_QLChiTieu
             this.lblNhapLai.Location = new System.Drawing.Point(13, 276);
             this.lblNhapLai.Name = "lblNhapLai";
             this.lblNhapLai.Size = new System.Drawing.Size(144, 19);
-            this.lblNhapLai.TabIndex = 4;
+            this.lblNhapLai.TabIndex = 9;
             this.lblNhapLai.Text = "Nhập Lại Mật Khẩu";
             // 
             // txtHoTen
@@ -105,7 +105,7 @@ namespace GUI_QLChiTieu
             this.txtHoTen.Multiline = true;
             this.txtHoTen.Name = "txtHoTen";
             this.txtHoTen.Size = new System.Drawing.Size(200, 25);
-            this.txtHoTen.TabIndex = 5;
+            this.txtHoTen.TabIndex = 4;
             // 
             // txtEmail
             // 
@@ -121,7 +121,7 @@ namespace GUI_QLChiTieu
             this.txtMatKhau.Multiline = true;
             this.txtMatKhau.Name = "txtMatKhau";
             this.txtMatKhau.Size = new System.Drawing.Size(200, 25);
-            this.txtMatKhau.TabIndex = 7;
+            this.txtMatKhau.TabIndex = 8;
             // 
             // txtMKNhapLai
             // 
@@ -129,7 +129,7 @@ namespace GUI_QLChiTieu
             this.txtMKNhapLai.Multiline = true;
             this.txtMKNhapLai.Name = "txtMKNhapLai";
             this.txtMKNhapLai.Size = new System.Drawing.Size(200, 25);
-            this.txtMKNhapLai.TabIndex = 8;
+            this.txtMKNhapLai.TabIndex = 10;
             // 
             // btnDangKy
             // 
@@ -137,7 +137,7 @@ namespace GUI_QLChiTieu
             this.btnDangKy.Location = new System.Drawing.Point(36, 391);
             this.btnDangKy.Name = "btnDangKy";
             this.btnDangKy.Size = new System.Drawing.Size(120, 40);
-            this.btnDangKy.TabIndex = 9;
+            this.btnDangKy.TabIndex = 14;
             this.btnDangKy.Text = "Đăng Ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
             // 
@@ -147,7 +147,7 @@ namespace GUI_QLChiTieu
             this.btnHuy.Location = new System.Drawing.Point(217, 391);
             this.btnHuy.Name = "btnHuy";
             this.btnHuy.Size = new System.Drawing.Size(120, 40);
-            this.btnHuy.TabIndex = 10;
+            this.btnHuy.TabIndex = 15;
             this.btnHuy.Text = "Hủy";
             this.btnHuy.UseVisualStyleBackColor = true;
             // 
@@ -158,7 +158,7 @@ namespace GUI_QLChiTieu
             this.lblTenDN.Location = new System.Drawing.Point(13, 77);
             this.lblTenDN.Name = "lblTenDN";
             this.lblTenDN.Size = new System.Drawing.Size(115, 19);
-            this.lblTenDN.TabIndex = 11;
+            this.lblTenDN.TabIndex = 1;
             this.lblTenDN.Text = "Tên Đăng Nhập";
             // 
             // txtTenDN
@@ -167,7 +167,7 @@ namespace GUI_QLChiTieu
             this.txtTenDN.Multiline = true;
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(200, 25);
-            this.txtTenDN.TabIndex = 12;
+            this.txtTenDN.TabIndex = 2;
             this.txtTenDN.Text = " ";
             // 
             // lblGioiTInh
@@ -177,7 +177,7 @@ namespace GUI_QLChiTieu
             this.lblGioiTInh.Location = new System.Drawing.Point(14, 323);
             this.lblGioiTInh.Name = "lblGioiTInh";
             this.lblGioiTInh.Size = new System.Drawing.Size(72, 19);
-            this.lblGioiTInh.TabIndex = 13;
+            this.lblGioiTInh.TabIndex = 11;
             this.lblGioiTInh.Text = "Giới Tính";
             // 
             // rdbtnNam
@@ -186,7 +186,7 @@ namespace GUI_QLChiTieu
             this.rdbtnNam.Location = new System.Drawing.Point(172, 321);
             this.rdbtnNam.Name = "rdbtnNam";
             this.rdbtnNam.Size = new System.Drawing.Size(57, 23);
-            this.rdbtnNam.TabIndex = 14;
+            this.rdbtnNam.TabIndex = 12;
             this.rdbtnNam.TabStop = true;
             this.rdbtnNam.Text = "Nam";
             this.rdbtnNam.UseVisualStyleBackColor = true;
@@ -197,13 +197,14 @@ namespace GUI_QLChiTieu
             this.rdbtnNu.Location = new System.Drawing.Point(268, 321);
             this.rdbtnNu.Name = "rdbtnNu";
             this.rdbtnNu.Size = new System.Drawing.Size(48, 23);
-            this.rdbtnNu.TabIndex = 15;
+            this.rdbtnNu.TabIndex = 13;
             this.rdbtnNu.TabStop = true;
             this.rdbtnNu.Text = "Nữ";
             this.rdbtnNu.UseVisualStyleBackColor = true;
             // 
             // FrmDangKy
             // 
+            this.AcceptButton = this.btnDangKy;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 461);

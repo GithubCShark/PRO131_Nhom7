@@ -90,6 +90,7 @@ namespace GUI_QLChiTieu
             // 
             // FrmQuenMatKhau
             // 
+            this.AcceptButton = this.btnDongY;
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 19F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(284, 261);

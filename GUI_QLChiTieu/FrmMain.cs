@@ -18,10 +18,13 @@ namespace GUI_QLChiTieu
         }
 
         public static string mail;
+        string frmName;
 
         private void btnThuNhap_Click(object sender, EventArgs e)
         {
-            this.panelMain.Controls.Clear();
+            this.panelControls.Hide();
+            btnBack.Enabled = true;
+            frmName = "FrmKhoanThu";
 
             FrmKhoanThu khoanThu = new FrmKhoanThu();
             khoanThu.TopLevel = false;
@@ -34,7 +37,9 @@ namespace GUI_QLChiTieu
 
         private void btnChiTieu_Click(object sender, EventArgs e)
         {
-            this.panelMain.Controls.Clear();
+            this.panelControls.Hide();
+            btnBack.Enabled = true;
+            frmName = "FrmKhoanChi";
 
             FrmKhoanChi khoanChi = new FrmKhoanChi();
             khoanChi.TopLevel = false;
@@ -47,7 +52,9 @@ namespace GUI_QLChiTieu
 
         private void btnThongKe_Click(object sender, EventArgs e)
         {
-            this.panelMain.Controls.Clear();
+            this.panelControls.Hide();
+            btnBack.Enabled = true;
+            frmName = "FrmThongKe";
 
             FrmThongKe thongKe = new FrmThongKe();
             thongKe.TopLevel = false;
@@ -60,7 +67,9 @@ namespace GUI_QLChiTieu
 
         private void btnMucTieu_Click(object sender, EventArgs e)
         {
-            this.panelMain.Controls.Clear();
+            this.panelControls.Hide();
+            btnBack.Enabled = true;
+            frmName = "FrmMucTieu";
 
             FrmMucTieu mucTieu = new FrmMucTieu();
             mucTieu.TopLevel = false;
@@ -74,6 +83,42 @@ namespace GUI_QLChiTieu
         private void FrmMain_FormClosed(object sender, FormClosedEventArgs e)
         {
             Application.Exit();
+        }
+
+        private void FrmMain_Load(object sender, EventArgs e)
+        {
+            this.Refresh();
+            btnBack.Enabled = false;
+        }
+
+        private void btnBack_Click(object sender, EventArgs e)
+        {
+            btnBack.Enabled = false;
+            CheckOpened(frmName);
+            panelControls.Show();
+        }
+
+        private void CheckOpened(string name)
+        {
+            Form fc = Application.OpenForms[name];
+
+            if (fc != null)
+            {
+                fc.Close();
+            }
+        }
+
+        private void btnTuyChon_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void btnDangXuat_Click(object sender, EventArgs e)
+        {
+            FrmDangNhap dn = new FrmDangNhap();
+            dn.Show();
+
+            this.Hide();
         }
     }
 }

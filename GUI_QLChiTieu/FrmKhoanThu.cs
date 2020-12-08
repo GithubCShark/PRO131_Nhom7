@@ -145,10 +145,10 @@ namespace GUI_QLChiTieu
 
         private void btnXoa_Click(object sender, EventArgs e)
         {
-            string maMT = txtMaKT.Text;
+            string maKT = txtMaKT.Text;
             if (MessageBox.Show("Bạn có chắc muốn xóa ?","Confirm", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                if (busKhoanThu.DeleteKhoanThu(maMT))
+                if (busKhoanThu.DeleteKhoanThu(maKT))
                 {
                     MessageBox.Show("Xóa thành công");
                     ResetValues();

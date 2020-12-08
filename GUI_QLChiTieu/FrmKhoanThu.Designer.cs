@@ -67,7 +67,7 @@ namespace GUI_QLChiTieu
             this.lblTieuDe.Location = new System.Drawing.Point(430, 9);
             this.lblTieuDe.Name = "lblTieuDe";
             this.lblTieuDe.Size = new System.Drawing.Size(144, 31);
-            this.lblTieuDe.TabIndex = 1;
+            this.lblTieuDe.TabIndex = 0;
             this.lblTieuDe.Text = "Khoản Thu";
             // 
             // lblKhoanThu
@@ -77,7 +77,7 @@ namespace GUI_QLChiTieu
             this.lblKhoanThu.Location = new System.Drawing.Point(73, 114);
             this.lblKhoanThu.Name = "lblKhoanThu";
             this.lblKhoanThu.Size = new System.Drawing.Size(113, 19);
-            this.lblKhoanThu.TabIndex = 2;
+            this.lblKhoanThu.TabIndex = 3;
             this.lblKhoanThu.Text = "Tên Khoản Thu";
             // 
             // lblNgayThu
@@ -87,7 +87,7 @@ namespace GUI_QLChiTieu
             this.lblNgayThu.Location = new System.Drawing.Point(73, 172);
             this.lblNgayThu.Name = "lblNgayThu";
             this.lblNgayThu.Size = new System.Drawing.Size(75, 19);
-            this.lblNgayThu.TabIndex = 3;
+            this.lblNgayThu.TabIndex = 5;
             this.lblNgayThu.Text = "Ngày Thu";
             // 
             // lblSoTien
@@ -97,7 +97,7 @@ namespace GUI_QLChiTieu
             this.lblSoTien.Location = new System.Drawing.Point(73, 215);
             this.lblSoTien.Name = "lblSoTien";
             this.lblSoTien.Size = new System.Drawing.Size(60, 19);
-            this.lblSoTien.TabIndex = 4;
+            this.lblSoTien.TabIndex = 7;
             this.lblSoTien.Text = "Số Tiền";
             // 
             // lblMoTa
@@ -107,7 +107,7 @@ namespace GUI_QLChiTieu
             this.lblMoTa.Location = new System.Drawing.Point(548, 59);
             this.lblMoTa.Name = "lblMoTa";
             this.lblMoTa.Size = new System.Drawing.Size(55, 19);
-            this.lblMoTa.TabIndex = 5;
+            this.lblMoTa.TabIndex = 9;
             this.lblMoTa.Text = "Mô Tả";
             // 
             // txtKhoanThu
@@ -116,7 +116,7 @@ namespace GUI_QLChiTieu
             this.txtKhoanThu.Multiline = true;
             this.txtKhoanThu.Name = "txtKhoanThu";
             this.txtKhoanThu.Size = new System.Drawing.Size(210, 30);
-            this.txtKhoanThu.TabIndex = 6;
+            this.txtKhoanThu.TabIndex = 4;
             // 
             // txtSoTien
             // 
@@ -124,7 +124,7 @@ namespace GUI_QLChiTieu
             this.txtSoTien.Multiline = true;
             this.txtSoTien.Name = "txtSoTien";
             this.txtSoTien.Size = new System.Drawing.Size(210, 30);
-            this.txtSoTien.TabIndex = 7;
+            this.txtSoTien.TabIndex = 8;
             // 
             // txtMoTa
             // 
@@ -132,7 +132,7 @@ namespace GUI_QLChiTieu
             this.txtMoTa.Multiline = true;
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.Size = new System.Drawing.Size(255, 75);
-            this.txtMoTa.TabIndex = 8;
+            this.txtMoTa.TabIndex = 10;
             // 
             // dtpkNgayThu
             // 
@@ -142,7 +142,7 @@ namespace GUI_QLChiTieu
             this.dtpkNgayThu.Location = new System.Drawing.Point(236, 166);
             this.dtpkNgayThu.Name = "dtpkNgayThu";
             this.dtpkNgayThu.Size = new System.Drawing.Size(210, 26);
-            this.dtpkNgayThu.TabIndex = 13;
+            this.dtpkNgayThu.TabIndex = 6;
             // 
             // btnXoa
             // 
@@ -152,7 +152,7 @@ namespace GUI_QLChiTieu
             this.btnXoa.Location = new System.Drawing.Point(775, 202);
             this.btnXoa.Name = "btnXoa";
             this.btnXoa.Size = new System.Drawing.Size(105, 45);
-            this.btnXoa.TabIndex = 12;
+            this.btnXoa.TabIndex = 14;
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = true;
@@ -166,7 +166,7 @@ namespace GUI_QLChiTieu
             this.btnSua.Location = new System.Drawing.Point(625, 202);
             this.btnSua.Name = "btnSua";
             this.btnSua.Size = new System.Drawing.Size(105, 45);
-            this.btnSua.TabIndex = 11;
+            this.btnSua.TabIndex = 13;
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = true;
@@ -180,7 +180,7 @@ namespace GUI_QLChiTieu
             this.btnLuu.Location = new System.Drawing.Point(775, 137);
             this.btnLuu.Name = "btnLuu";
             this.btnLuu.Size = new System.Drawing.Size(105, 45);
-            this.btnLuu.TabIndex = 10;
+            this.btnLuu.TabIndex = 12;
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
@@ -194,7 +194,7 @@ namespace GUI_QLChiTieu
             this.btnThem.Location = new System.Drawing.Point(625, 137);
             this.btnThem.Name = "btnThem";
             this.btnThem.Size = new System.Drawing.Size(105, 45);
-            this.btnThem.TabIndex = 9;
+            this.btnThem.TabIndex = 11;
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = true;
@@ -207,7 +207,7 @@ namespace GUI_QLChiTieu
             this.lblMaKT.Location = new System.Drawing.Point(73, 62);
             this.lblMaKT.Name = "lblMaKT";
             this.lblMaKT.Size = new System.Drawing.Size(111, 19);
-            this.lblMaKT.TabIndex = 14;
+            this.lblMaKT.TabIndex = 1;
             this.lblMaKT.Text = "Mã Khoàn Thu";
             // 
             // txtMaKT
@@ -216,7 +216,7 @@ namespace GUI_QLChiTieu
             this.txtMaKT.Multiline = true;
             this.txtMaKT.Name = "txtMaKT";
             this.txtMaKT.Size = new System.Drawing.Size(210, 30);
-            this.txtMaKT.TabIndex = 15;
+            this.txtMaKT.TabIndex = 2;
             // 
             // FrmKhoanThu
             // 

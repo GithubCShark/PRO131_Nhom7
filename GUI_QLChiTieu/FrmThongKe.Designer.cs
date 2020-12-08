@@ -107,7 +107,7 @@ namespace GUI_QLChiTieu
             this.txtSoDuNgay.Name = "txtSoDuNgay";
             this.txtSoDuNgay.ReadOnly = true;
             this.txtSoDuNgay.Size = new System.Drawing.Size(168, 26);
-            this.txtSoDuNgay.TabIndex = 12;
+            this.txtSoDuNgay.TabIndex = 7;
             // 
             // txtChiNgay
             // 
@@ -115,7 +115,7 @@ namespace GUI_QLChiTieu
             this.txtChiNgay.Name = "txtChiNgay";
             this.txtChiNgay.ReadOnly = true;
             this.txtChiNgay.Size = new System.Drawing.Size(168, 26);
-            this.txtChiNgay.TabIndex = 11;
+            this.txtChiNgay.TabIndex = 5;
             // 
             // txtThuNgay
             // 
@@ -123,7 +123,7 @@ namespace GUI_QLChiTieu
             this.txtThuNgay.Name = "txtThuNgay";
             this.txtThuNgay.ReadOnly = true;
             this.txtThuNgay.Size = new System.Drawing.Size(168, 26);
-            this.txtThuNgay.TabIndex = 10;
+            this.txtThuNgay.TabIndex = 3;
             // 
             // dtpkNgay
             // 
@@ -132,7 +132,7 @@ namespace GUI_QLChiTieu
             this.dtpkNgay.Location = new System.Drawing.Point(125, 17);
             this.dtpkNgay.Name = "dtpkNgay";
             this.dtpkNgay.Size = new System.Drawing.Size(200, 26);
-            this.dtpkNgay.TabIndex = 9;
+            this.dtpkNgay.TabIndex = 1;
             // 
             // dgvChiNgay
             // 
@@ -160,7 +160,7 @@ namespace GUI_QLChiTieu
             this.lblCTKCNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCTKCNgay.Name = "lblCTKCNgay";
             this.lblCTKCNgay.Size = new System.Drawing.Size(138, 19);
-            this.lblCTKCNgay.TabIndex = 6;
+            this.lblCTKCNgay.TabIndex = 9;
             this.lblCTKCNgay.Text = "Chi Tiết Khoản Chi";
             // 
             // lblCTKTNgay
@@ -171,7 +171,7 @@ namespace GUI_QLChiTieu
             this.lblCTKTNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCTKTNgay.Name = "lblCTKTNgay";
             this.lblCTKTNgay.Size = new System.Drawing.Size(141, 19);
-            this.lblCTKTNgay.TabIndex = 5;
+            this.lblCTKTNgay.TabIndex = 8;
             this.lblCTKTNgay.Text = "Chi Tiết Khoản Thu";
             // 
             // lblSoDuNgay
@@ -182,7 +182,7 @@ namespace GUI_QLChiTieu
             this.lblSoDuNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSoDuNgay.Name = "lblSoDuNgay";
             this.lblSoDuNgay.Size = new System.Drawing.Size(52, 19);
-            this.lblSoDuNgay.TabIndex = 4;
+            this.lblSoDuNgay.TabIndex = 6;
             this.lblSoDuNgay.Text = "Số Dư";
             // 
             // lblChiNgay
@@ -193,7 +193,7 @@ namespace GUI_QLChiTieu
             this.lblChiNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChiNgay.Name = "lblChiNgay";
             this.lblChiNgay.Size = new System.Drawing.Size(70, 19);
-            this.lblChiNgay.TabIndex = 3;
+            this.lblChiNgay.TabIndex = 4;
             this.lblChiNgay.Text = "Tổng Chi";
             // 
             // lblThuNgay
@@ -215,7 +215,7 @@ namespace GUI_QLChiTieu
             this.lblNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblNgay.Name = "lblNgay";
             this.lblNgay.Size = new System.Drawing.Size(84, 19);
-            this.lblNgay.TabIndex = 1;
+            this.lblNgay.TabIndex = 0;
             this.lblNgay.Text = "Chọn Ngày";
             // 
             // tabPageThang
@@ -247,7 +247,7 @@ namespace GUI_QLChiTieu
             this.txtSoDuThang.Name = "txtSoDuThang";
             this.txtSoDuThang.ReadOnly = true;
             this.txtSoDuThang.Size = new System.Drawing.Size(168, 26);
-            this.txtSoDuThang.TabIndex = 24;
+            this.txtSoDuThang.TabIndex = 17;
             // 
             // txtChiThang
             // 
@@ -255,7 +255,7 @@ namespace GUI_QLChiTieu
             this.txtChiThang.Name = "txtChiThang";
             this.txtChiThang.ReadOnly = true;
             this.txtChiThang.Size = new System.Drawing.Size(168, 26);
-            this.txtChiThang.TabIndex = 23;
+            this.txtChiThang.TabIndex = 15;
             // 
             // txtThuThang
             // 
@@ -263,7 +263,7 @@ namespace GUI_QLChiTieu
             this.txtThuThang.Name = "txtThuThang";
             this.txtThuThang.ReadOnly = true;
             this.txtThuThang.Size = new System.Drawing.Size(168, 26);
-            this.txtThuThang.TabIndex = 22;
+            this.txtThuThang.TabIndex = 13;
             // 
             // dtpkThang
             // 
@@ -272,7 +272,7 @@ namespace GUI_QLChiTieu
             this.dtpkThang.Location = new System.Drawing.Point(124, 20);
             this.dtpkThang.Name = "dtpkThang";
             this.dtpkThang.Size = new System.Drawing.Size(200, 26);
-            this.dtpkThang.TabIndex = 21;
+            this.dtpkThang.TabIndex = 11;
             // 
             // dgvChiThang
             // 
@@ -300,7 +300,7 @@ namespace GUI_QLChiTieu
             this.lblCTKCThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCTKCThang.Name = "lblCTKCThang";
             this.lblCTKCThang.Size = new System.Drawing.Size(138, 19);
-            this.lblCTKCThang.TabIndex = 18;
+            this.lblCTKCThang.TabIndex = 19;
             this.lblCTKCThang.Text = "Chi Tiết Khoản Chi";
             // 
             // lblCTKTThang
@@ -311,7 +311,7 @@ namespace GUI_QLChiTieu
             this.lblCTKTThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblCTKTThang.Name = "lblCTKTThang";
             this.lblCTKTThang.Size = new System.Drawing.Size(141, 19);
-            this.lblCTKTThang.TabIndex = 17;
+            this.lblCTKTThang.TabIndex = 18;
             this.lblCTKTThang.Text = "Chi Tiết Khoản Thu";
             // 
             // llblSoDuThang
@@ -333,7 +333,7 @@ namespace GUI_QLChiTieu
             this.lblChiThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChiThang.Name = "lblChiThang";
             this.lblChiThang.Size = new System.Drawing.Size(70, 19);
-            this.lblChiThang.TabIndex = 15;
+            this.lblChiThang.TabIndex = 14;
             this.lblChiThang.Text = "Tổng Chi";
             // 
             // lblThuThang
@@ -344,7 +344,7 @@ namespace GUI_QLChiTieu
             this.lblThuThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThuThang.Name = "lblThuThang";
             this.lblThuThang.Size = new System.Drawing.Size(73, 19);
-            this.lblThuThang.TabIndex = 14;
+            this.lblThuThang.TabIndex = 12;
             this.lblThuThang.Text = "Tổng Thu";
             // 
             // lblThang
@@ -355,7 +355,7 @@ namespace GUI_QLChiTieu
             this.lblThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThang.Name = "lblThang";
             this.lblThang.Size = new System.Drawing.Size(90, 19);
-            this.lblThang.TabIndex = 13;
+            this.lblThang.TabIndex = 10;
             this.lblThang.Text = "Chọn Tháng";
             // 
             // lblTieuDe
