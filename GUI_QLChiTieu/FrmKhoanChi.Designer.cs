@@ -57,6 +57,7 @@ namespace GUI_QLChiTieu
             this.dgvKhoanChi.Name = "dgvKhoanChi";
             this.dgvKhoanChi.Size = new System.Drawing.Size(943, 351);
             this.dgvKhoanChi.TabIndex = 0;
+            this.dgvKhoanChi.Click += new System.EventHandler(this.dgvKhoanChi_Click);
             // 
             // lblTieuDe
             // 
@@ -155,6 +156,7 @@ namespace GUI_QLChiTieu
             this.btnXoa.Text = "Xóa";
             this.btnXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnXoa.UseVisualStyleBackColor = true;
+            this.btnXoa.Click += new System.EventHandler(this.btnXoa_Click);
             // 
             // btnSua
             // 
@@ -168,6 +170,7 @@ namespace GUI_QLChiTieu
             this.btnSua.Text = "Sửa";
             this.btnSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSua.UseVisualStyleBackColor = true;
+            this.btnSua.Click += new System.EventHandler(this.btnSua_Click);
             // 
             // btnLuu
             // 
@@ -181,6 +184,7 @@ namespace GUI_QLChiTieu
             this.btnLuu.Text = "Lưu";
             this.btnLuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnLuu.UseVisualStyleBackColor = true;
+            this.btnLuu.Click += new System.EventHandler(this.btnLuu_Click);
             // 
             // btnThem
             // 
@@ -194,6 +198,7 @@ namespace GUI_QLChiTieu
             this.btnThem.Text = "Thêm";
             this.btnThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnThem.UseVisualStyleBackColor = true;
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // txtMaKC
             // 
@@ -239,6 +244,7 @@ namespace GUI_QLChiTieu
             this.Name = "FrmKhoanChi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "KHOẢN CHI";
+            this.Load += new System.EventHandler(this.FrmKhoanChi_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dgvKhoanChi)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
