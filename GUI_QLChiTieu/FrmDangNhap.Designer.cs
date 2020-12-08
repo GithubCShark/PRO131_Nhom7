@@ -172,6 +172,7 @@ namespace GUI_QLChiTieu
             this.Name = "FrmDangNhap";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "ĐĂNG NHẬP";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.FrmDangNhap_FormClosed);
             this.ResumeLayout(false);
             this.PerformLayout();
 

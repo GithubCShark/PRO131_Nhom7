@@ -19,6 +19,7 @@ namespace GUI_QLChiTieu
 
         public static string mail;
         string frmName;
+        FrmTuyChon tuyChon = new FrmTuyChon();
 
         private void btnThuNhap_Click(object sender, EventArgs e)
         {
@@ -110,11 +111,13 @@ namespace GUI_QLChiTieu
 
         private void btnTuyChon_Click(object sender, EventArgs e)
         {
-            
+            tuyChon.Show();
         }
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
+            tuyChon.Hide();
+
             FrmDangNhap dn = new FrmDangNhap();
             dn.Show();
 

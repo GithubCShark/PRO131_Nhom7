@@ -64,5 +64,10 @@ namespace GUI_QLChiTieu
         {
             this.Close();
         }
+
+        private void FrmDangNhap_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
