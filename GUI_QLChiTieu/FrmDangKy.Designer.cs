@@ -140,6 +140,7 @@ namespace GUI_QLChiTieu
             this.btnDangKy.TabIndex = 14;
             this.btnDangKy.Text = "Đăng Ký";
             this.btnDangKy.UseVisualStyleBackColor = true;
+            this.btnDangKy.Click += new System.EventHandler(this.btnDangKy_Click);
             // 
             // btnHuy
             // 
@@ -168,7 +169,6 @@ namespace GUI_QLChiTieu
             this.txtTenDN.Name = "txtTenDN";
             this.txtTenDN.Size = new System.Drawing.Size(200, 25);
             this.txtTenDN.TabIndex = 2;
-            this.txtTenDN.Text = " ";
             // 
             // lblGioiTInh
             // 

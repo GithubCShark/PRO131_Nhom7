@@ -129,8 +129,8 @@ namespace GUI_QLChiTieu
             }
             else
             {
-                DTO_KhoanChi kc = new DTO_KhoanChi(txtKhoanChi.Text, dtpkNgayChi.Value, float.Parse(txtSoTien.Text), txtMoTa.Text, stremail);
-                if (busKhoanChi.InsertKhoanChi(kc))
+                DTO_KhoanChi kc = new DTO_KhoanChi(txtMaKC.Text, txtKhoanChi.Text, dtpkNgayChi.Value, float.Parse(txtSoTien.Text), txtMoTa.Text);
+                if (busKhoanChi.UpdateKhoanChi(kc))
                 {
                     MessageBox.Show("Sửa thành công");
                     ResetValues();

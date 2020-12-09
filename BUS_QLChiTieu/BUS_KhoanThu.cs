@@ -42,5 +42,15 @@ namespace BUS_QLChiTieu
         {
             return dalKhoanThu.getKhoanThuThang(thang);
         }
+
+        public DataTable getdsTkeNgay(DateTime ngay)
+        {
+            return dalKhoanThu.getdsTkeNgay(ngay);
+        }
+
+        public DataTable getdsTkeThang(DateTime thang)
+        {
+            return dalKhoanThu.getdsTkeThang(thang);
+        }
     }
 }

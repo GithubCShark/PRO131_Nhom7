@@ -46,10 +46,10 @@ namespace DAL_QLChiTieu
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "UpdateDataIntoKhoanThu";
+                cmd.CommandText = "UpdateDataIntoKhoanChi";
                 cmd.Parameters.AddWithValue("maKC", kc.MaKC);
                 cmd.Parameters.AddWithValue("tenkhoanchi", kc.TenKC);
-                cmd.Parameters.AddWithValue("ngayhi", kc.NgayChi);
+                cmd.Parameters.AddWithValue("ngaychi", kc.NgayChi);
                 cmd.Parameters.AddWithValue("sotien", kc.SoTien);
                 cmd.Parameters.AddWithValue("mota", kc.MoTa);
 
@@ -115,7 +115,7 @@ namespace DAL_QLChiTieu
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "DahSachKhoanChiNgay";
+                cmd.CommandText = "DanhSachKhoanChiNgay";
                 cmd.Parameters.AddWithValue("ngay", ngay);
                 DataTable dtKCNgay = new DataTable();
                 dtKCNgay.Load(cmd.ExecuteReader());
@@ -135,7 +135,7 @@ namespace DAL_QLChiTieu
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "DahSachKhoanChiThang";
+                cmd.CommandText = "DanhSachKhoanChiThang";
                 cmd.Parameters.AddWithValue("ngay", thang);
                 DataTable dtKCThang = new DataTable();
                 dtKCThang.Load(cmd.ExecuteReader());

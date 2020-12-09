@@ -115,7 +115,7 @@ namespace DAL_QLChiTieu
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "DahSachKhoanThuNgay";
+                cmd.CommandText = "DanhSachKhoanThuNgay";
                 cmd.Parameters.AddWithValue("ngay", ngay);
                 DataTable dtKTNgay = new DataTable();
                 dtKTNgay.Load(cmd.ExecuteReader());
@@ -135,11 +135,51 @@ namespace DAL_QLChiTieu
                 SqlCommand cmd = new SqlCommand();
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
-                cmd.CommandText = "DahSachKhoanThuThang";
+                cmd.CommandText = "DanhSachKhoanThuThang";
                 cmd.Parameters.AddWithValue("ngay", thang);
                 DataTable dtKTThang = new DataTable();
                 dtKTThang.Load(cmd.ExecuteReader());
                 return dtKTThang;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
+
+        public DataTable getdsTkeNgay(DateTime ngay)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "DanhSachTKeNgay";
+                cmd.Parameters.AddWithValue("ngay", ngay);
+                DataTable dtNgay = new DataTable();
+                dtNgay.Load(cmd.ExecuteReader());
+                return dtNgay;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
+
+        public DataTable getdsTkeThang(DateTime thang)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "DanhSachTKeThang";
+                cmd.Parameters.AddWithValue("ngay", thang);
+                DataTable dtThang = new DataTable();
+                dtThang.Load(cmd.ExecuteReader());
+                return dtThang;
             }
             finally
             {

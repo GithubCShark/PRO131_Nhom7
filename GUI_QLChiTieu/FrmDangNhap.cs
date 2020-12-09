@@ -69,5 +69,17 @@ namespace GUI_QLChiTieu
         {
             Application.Exit();
         }
+
+        private void lnklblDangKy_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmDangKy dk = new FrmDangKy();
+            dk.Show();
+        }
+
+        private void lnklblQuenMK_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            FrmQuenMatKhau quenMK = new FrmQuenMatKhau();
+            quenMK.Show();
+        }
     }
 }

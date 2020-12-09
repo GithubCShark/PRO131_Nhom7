@@ -133,9 +133,11 @@ namespace GUI_QLChiTieu
             this.dtpkNgay.Name = "dtpkNgay";
             this.dtpkNgay.Size = new System.Drawing.Size(200, 26);
             this.dtpkNgay.TabIndex = 1;
+            this.dtpkNgay.ValueChanged += new System.EventHandler(this.dtpkNgay_ValueChanged);
             // 
             // dgvChiNgay
             // 
+            this.dgvChiNgay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvChiNgay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChiNgay.Location = new System.Drawing.Point(24, 350);
             this.dgvChiNgay.Margin = new System.Windows.Forms.Padding(4);
@@ -145,6 +147,7 @@ namespace GUI_QLChiTieu
             // 
             // dgvThuNgay
             // 
+            this.dgvThuNgay.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThuNgay.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThuNgay.Location = new System.Drawing.Point(24, 152);
             this.dgvThuNgay.Margin = new System.Windows.Forms.Padding(4);
@@ -273,6 +276,7 @@ namespace GUI_QLChiTieu
             this.dtpkThang.Name = "dtpkThang";
             this.dtpkThang.Size = new System.Drawing.Size(200, 26);
             this.dtpkThang.TabIndex = 11;
+            this.dtpkThang.ValueChanged += new System.EventHandler(this.dtpkThang_ValueChanged);
             // 
             // dgvChiThang
             // 

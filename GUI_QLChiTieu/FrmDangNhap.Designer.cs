@@ -103,6 +103,7 @@ namespace GUI_QLChiTieu
             this.lnklblQuenMK.TabIndex = 7;
             this.lnklblQuenMK.TabStop = true;
             this.lnklblQuenMK.Text = "Quên Mật Khẩu ?";
+            this.lnklblQuenMK.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblQuenMK_LinkClicked);
             // 
             // lnklblDangKy
             // 
@@ -114,6 +115,7 @@ namespace GUI_QLChiTieu
             this.lnklblDangKy.TabIndex = 6;
             this.lnklblDangKy.TabStop = true;
             this.lnklblDangKy.Text = "Đăng Ký";
+            this.lnklblDangKy.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnklblDangKy_LinkClicked);
             // 
             // btnDangNhap
             // 

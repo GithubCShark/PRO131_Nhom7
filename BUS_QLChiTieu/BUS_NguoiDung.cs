@@ -64,5 +64,36 @@ namespace BUS_QLChiTieu
             }
             return encryptdata.ToString();
         }
+
+        public void SendMail(string email)
+        {
+            try
+            {
+                SmtpClient client = new SmtpClient("smtp.gmail.com", 25);
+
+                NetworkCredential cred = new NetworkCredential("alienlys1309@gmail.com", "@ps12496");
+
+                MailMessage Msg = new MailMessage();
+
+                Msg.From = new MailAddress("alienlys1309@gmail.com");
+
+                Msg.To.Add(email);
+
+                Msg.Subject = "Chào mừng người dùng mới";
+
+                Msg.Body = "Chào anh/chị. Cảm ơn anh/chị đã sử dụng sản phẩm của chúng tôi";
+
+                client.Credentials = cred;
+
+                client.EnableSsl = true;
+                client.Send(Msg);
+
+                MessageBox.Show("Một Email đã được gửi tới bạn!");
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
