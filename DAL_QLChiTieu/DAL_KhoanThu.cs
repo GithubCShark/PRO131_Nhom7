@@ -107,7 +107,7 @@ namespace DAL_QLChiTieu
             }
         }
 
-        public DataTable getKhoanThuNgay(DateTime ngay)
+        public DataTable getKhoanThuNgay(DateTime ngayBD, DateTime ngayKT)
         {
             try
             {
@@ -116,7 +116,8 @@ namespace DAL_QLChiTieu
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "DanhSachKhoanThuNgay";
-                cmd.Parameters.AddWithValue("ngay", ngay);
+                cmd.Parameters.AddWithValue("ngayBD", ngayBD);
+                cmd.Parameters.AddWithValue("ngayKT", ngayKT);
                 DataTable dtKTNgay = new DataTable();
                 dtKTNgay.Load(cmd.ExecuteReader());
                 return dtKTNgay;
@@ -147,7 +148,7 @@ namespace DAL_QLChiTieu
             }
         }
 
-        public DataTable getdsTkeNgay(DateTime ngay)
+        public DataTable getdsTkeNgay(DateTime ngayBD, DateTime ngayKT)
         {
             try
             {
@@ -156,7 +157,8 @@ namespace DAL_QLChiTieu
                 cmd.Connection = _conn;
                 cmd.CommandType = CommandType.StoredProcedure;
                 cmd.CommandText = "DanhSachTKeNgay";
-                cmd.Parameters.AddWithValue("ngay", ngay);
+                cmd.Parameters.AddWithValue("ngayBD", ngayBD);
+                cmd.Parameters.AddWithValue("ngayKT", ngayKT);
                 DataTable dtNgay = new DataTable();
                 dtNgay.Load(cmd.ExecuteReader());
                 return dtNgay;

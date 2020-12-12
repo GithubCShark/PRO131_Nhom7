@@ -32,5 +32,10 @@ namespace BUS_QLChiTieu
         {
             return dalMucTieu.getMucTieu();
         }
+
+        public DataTable getTkeMucTieu(DateTime ngay)
+        {
+            return dalMucTieu.getTkeMucTieu(ngay);
+        }
     }
 }

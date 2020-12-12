@@ -33,9 +33,9 @@ namespace BUS_QLChiTieu
             return dalKhoanThu.getKhoanThu();
         }
 
-        public DataTable getKhoanThuNgay(DateTime ngay)
+        public DataTable getKhoanThuNgay(DateTime ngayBD, DateTime ngayKT)
         {
-            return dalKhoanThu.getKhoanThuNgay(ngay);
+            return dalKhoanThu.getKhoanThuNgay(ngayBD, ngayKT);
         }
 
         public DataTable getKhoanThuThang(DateTime thang)
@@ -43,9 +43,9 @@ namespace BUS_QLChiTieu
             return dalKhoanThu.getKhoanThuThang(thang);
         }
 
-        public DataTable getdsTkeNgay(DateTime ngay)
+        public DataTable getdsTkeNgay(DateTime ngayBD, DateTime ngayKT)
         {
-            return dalKhoanThu.getdsTkeNgay(ngay);
+            return dalKhoanThu.getdsTkeNgay(ngayBD, ngayKT);
         }
 
         public DataTable getdsTkeThang(DateTime thang)

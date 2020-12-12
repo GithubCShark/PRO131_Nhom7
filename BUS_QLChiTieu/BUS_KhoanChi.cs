@@ -33,9 +33,9 @@ namespace BUS_QLChiTieu
             return dalKhoanChi.getKhoanChi();
         }
 
-        public DataTable getKhoanChiNgay(DateTime ngay)
+        public DataTable getKhoanChiNgay(DateTime ngayBD, DateTime ngayKT)
         {
-            return dalKhoanChi.getKhoanChiNgay(ngay);
+            return dalKhoanChi.getKhoanChiNgay(ngayBD, ngayKT);
         }
 
         public DataTable getKhoanChiThang(DateTime thang)

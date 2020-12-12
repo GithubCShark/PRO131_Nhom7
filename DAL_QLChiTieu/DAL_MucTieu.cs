@@ -106,5 +106,25 @@ namespace DAL_QLChiTieu
                 _conn.Close();
             }
         }
+
+        public DataTable getTkeMucTieu(DateTime ngay)
+        {
+            try
+            {
+                _conn.Open();
+                SqlCommand cmd = new SqlCommand();
+                cmd.Connection = _conn;
+                cmd.CommandType = CommandType.StoredProcedure;
+                cmd.CommandText = "ThongKeMucTieu";
+                cmd.Parameters.AddWithValue("ngay", ngay);
+                DataTable dtTkeMT = new DataTable();
+                dtTkeMT.Load(cmd.ExecuteReader());
+                return dtTkeMT;
+            }
+            finally
+            {
+                _conn.Close();
+            }
+        }
     }
 }

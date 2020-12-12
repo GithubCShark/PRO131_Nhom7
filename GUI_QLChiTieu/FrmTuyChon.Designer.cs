@@ -119,6 +119,7 @@ namespace GUI_QLChiTieu
             this.txtUSD.Name = "txtUSD";
             this.txtUSD.Size = new System.Drawing.Size(170, 30);
             this.txtUSD.TabIndex = 3;
+            this.txtUSD.TextChanged += new System.EventHandler(this.txtUSD_TextChanged);
             // 
             // txtVND
             // 
@@ -127,6 +128,7 @@ namespace GUI_QLChiTieu
             this.txtVND.Name = "txtVND";
             this.txtVND.Size = new System.Drawing.Size(170, 30);
             this.txtVND.TabIndex = 0;
+            this.txtVND.TextChanged += new System.EventHandler(this.txtVND_TextChanged);
             // 
             // tabPageDoiMK
             // 
@@ -170,6 +172,7 @@ namespace GUI_QLChiTieu
             this.btnDoiMK.TabIndex = 6;
             this.btnDoiMK.Text = "Đổi Mật Khẩu";
             this.btnDoiMK.UseVisualStyleBackColor = true;
+            this.btnDoiMK.Click += new System.EventHandler(this.btnDoiMK_Click);
             // 
             // txtMKCu
             // 
@@ -261,6 +264,7 @@ namespace GUI_QLChiTieu
             this.btnThoat.TabIndex = 1;
             this.btnThoat.Text = "Thoát";
             this.btnThoat.UseVisualStyleBackColor = true;
+            this.btnThoat.Click += new System.EventHandler(this.btnThoat_Click);
             // 
             // FrmTuyChon
             // 

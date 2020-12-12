@@ -20,31 +20,8 @@ namespace GUI_QLChiTieu
 
         BUS_KhoanThu busKhoanThu = new BUS_KhoanThu();
         BUS_KhoanChi busKhoanChi = new BUS_KhoanChi();
-
-        private void dtpkNgay_ValueChanged(object sender, EventArgs e)
-        {
-            dgvThuNgay.DataSource = busKhoanThu.getKhoanThuNgay(dtpkNgay.Value);
-            dgvThuNgay.Columns[0].HeaderText = "Mã Khoản Thu";
-            dgvThuNgay.Columns[1].Visible = false;
-            dgvThuNgay.Columns[2].HeaderText = "Tên Khoản Thu";
-            dgvThuNgay.Columns[3].HeaderText = "Ngày Thu";
-            dgvThuNgay.Columns[4].HeaderText = "Số Tiền";
-            dgvThuNgay.Columns[5].HeaderText = "Mô Tả";
-
-            dgvChiNgay.DataSource = busKhoanChi.getKhoanChiNgay(dtpkNgay.Value);
-            dgvChiNgay.Columns[0].HeaderText = "Mã Khoản Chi";
-            dgvChiNgay.Columns[1].Visible = false;
-            dgvChiNgay.Columns[2].HeaderText = "Tên Khoản Chi";
-            dgvChiNgay.Columns[3].HeaderText = "Ngày Chi";
-            dgvChiNgay.Columns[4].HeaderText = "Số Tiền";
-            dgvChiNgay.Columns[5].HeaderText = "Mô Tả";
-
-            DataTable dtNgay = busKhoanThu.getdsTkeNgay(dtpkNgay.Value);
-            txtThuNgay.Text = dtNgay.Rows[0][0].ToString();
-            txtChiNgay.Text = dtNgay.Rows[0][1].ToString();
-            txtSoDuNgay.Text = dtNgay.Rows[0][2].ToString();
-        }
-
+        BUS_MucTieu busMucTieu = new BUS_MucTieu();
+        
         private void dtpkThang_ValueChanged(object sender, EventArgs e)
         {
             dgvThuThang.DataSource = busKhoanThu.getKhoanThuThang(dtpkThang.Value);
@@ -64,9 +41,78 @@ namespace GUI_QLChiTieu
             dgvChiThang.Columns[5].HeaderText = "Mô Tả";
 
             DataTable dtThang = busKhoanThu.getdsTkeThang(dtpkThang.Value);
-            txtThuThang.Text = dtThang.Rows[0][0].ToString();
-            txtChiThang.Text = dtThang.Rows[0][1].ToString();
-            txtSoDuThang.Text = dtThang.Rows[0][2].ToString();
+            txtThuThang.Text = string.Format("{0:#,##00}", dtThang.Rows[0][0]);
+            txtChiThang.Text = string.Format("{0:#,##00}", dtThang.Rows[0][1]);
+            txtSoDuThang.Text = string.Format("{0:#,##00}", dtThang.Rows[0][2]);
+
+            int chi;
+            int limit;
+            DataTable dtTkeMT = busMucTieu.getTkeMucTieu(dtpkThang.Value);
+            if (dtTkeMT != null && dtTkeMT.Rows.Count > 0)
+            {
+                chi = Convert.ToInt32(dtThang.Rows[0][1].ToString());
+                limit = Convert.ToInt32(dtTkeMT.Rows[0][3].ToString());
+                if (chi > limit)
+                {
+                    MessageBox.Show("Bạn đã vượt quá giới hạn chi tiêu tháng này", "Phê bình");
+                }
+                else
+                {
+                    MessageBox.Show("Bạn đã không vượt quá giới hạn chi tiêu tháng này", "Chúc mừng");
+                }
+            }
+            else
+            {
+                MessageBox.Show("Bạn chưa đặt mục tiêu cho tháng này");
+            }
+        }
+
+        private void dtpkNgayBD_ValueChanged(object sender, EventArgs e)
+        {
+            dgvThuNgay.DataSource = busKhoanThu.getKhoanThuNgay(dtpkNgayBD.Value, dtpkNgayKT.Value);
+            dgvThuNgay.Columns[0].HeaderText = "Mã Khoản Thu";
+            dgvThuNgay.Columns[1].Visible = false;
+            dgvThuNgay.Columns[2].HeaderText = "Tên Khoản Thu";
+            dgvThuNgay.Columns[3].HeaderText = "Ngày Thu";
+            dgvThuNgay.Columns[4].HeaderText = "Số Tiền";
+            dgvThuNgay.Columns[5].HeaderText = "Mô Tả";
+
+            dgvChiNgay.DataSource = busKhoanChi.getKhoanChiNgay(dtpkNgayBD.Value, dtpkNgayKT.Value);
+            dgvChiNgay.Columns[0].HeaderText = "Mã Khoản Chi";
+            dgvChiNgay.Columns[1].Visible = false;
+            dgvChiNgay.Columns[2].HeaderText = "Tên Khoản Chi";
+            dgvChiNgay.Columns[3].HeaderText = "Ngày Chi";
+            dgvChiNgay.Columns[4].HeaderText = "Số Tiền";
+            dgvChiNgay.Columns[5].HeaderText = "Mô Tả";
+
+            DataTable dtNgay = busKhoanThu.getdsTkeNgay(dtpkNgayBD.Value, dtpkNgayKT.Value);
+            txtThuNgay.Text = string.Format("{0:#,##00}", dtNgay.Rows[0][0]);
+            txtChiNgay.Text = string.Format("{0:#,##00}", dtNgay.Rows[0][1]);
+            txtSoDuNgay.Text = string.Format("{0:#,##00}", dtNgay.Rows[0][2]);
+        }
+
+        private void dtpkNgayKT_ValueChanged(object sender, EventArgs e)
+        {
+            dgvThuNgay.DataSource = busKhoanThu.getKhoanThuNgay(dtpkNgayBD.Value, dtpkNgayKT.Value);
+            dgvThuNgay.Columns[0].HeaderText = "Mã Khoản Thu";
+            dgvThuNgay.Columns[1].Visible = false;
+            dgvThuNgay.Columns[2].HeaderText = "Tên Khoản Thu";
+            dgvThuNgay.Columns[3].HeaderText = "Ngày Thu";
+            dgvThuNgay.Columns[4].HeaderText = "Số Tiền";
+            dgvThuNgay.Columns[5].HeaderText = "Mô Tả";
+
+            dgvChiNgay.DataSource = busKhoanChi.getKhoanChiNgay(dtpkNgayBD.Value, dtpkNgayKT.Value);
+            dgvChiNgay.Columns[0].HeaderText = "Mã Khoản Chi";
+            dgvChiNgay.Columns[1].Visible = false;
+            dgvChiNgay.Columns[2].HeaderText = "Tên Khoản Chi";
+            dgvChiNgay.Columns[3].HeaderText = "Ngày Chi";
+            dgvChiNgay.Columns[4].HeaderText = "Số Tiền";
+            dgvChiNgay.Columns[5].HeaderText = "Mô Tả";
+
+            DataTable dtNgay = busKhoanThu.getdsTkeNgay(dtpkNgayBD.Value, dtpkNgayKT.Value);
+            txtThuNgay.Text = string.Format("{0:#,##00}", dtNgay.Rows[0][0]);
+            txtChiNgay.Text = string.Format("{0:#,##00}", dtNgay.Rows[0][1]);
+            txtSoDuNgay.Text = string.Format("{0:#,##00}", dtNgay.Rows[0][2]);
         }
     }
 }

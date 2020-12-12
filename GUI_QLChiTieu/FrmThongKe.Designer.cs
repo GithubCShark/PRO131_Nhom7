@@ -35,7 +35,7 @@ namespace GUI_QLChiTieu
             this.txtSoDuNgay = new System.Windows.Forms.TextBox();
             this.txtChiNgay = new System.Windows.Forms.TextBox();
             this.txtThuNgay = new System.Windows.Forms.TextBox();
-            this.dtpkNgay = new System.Windows.Forms.DateTimePicker();
+            this.dtpkNgayBD = new System.Windows.Forms.DateTimePicker();
             this.dgvChiNgay = new System.Windows.Forms.DataGridView();
             this.dgvThuNgay = new System.Windows.Forms.DataGridView();
             this.lblCTKCNgay = new System.Windows.Forms.Label();
@@ -43,7 +43,7 @@ namespace GUI_QLChiTieu
             this.lblSoDuNgay = new System.Windows.Forms.Label();
             this.lblChiNgay = new System.Windows.Forms.Label();
             this.lblThuNgay = new System.Windows.Forms.Label();
-            this.lblNgay = new System.Windows.Forms.Label();
+            this.lblNgayBD = new System.Windows.Forms.Label();
             this.tabPageThang = new System.Windows.Forms.TabPage();
             this.txtSoDuThang = new System.Windows.Forms.TextBox();
             this.txtChiThang = new System.Windows.Forms.TextBox();
@@ -58,6 +58,8 @@ namespace GUI_QLChiTieu
             this.lblThuThang = new System.Windows.Forms.Label();
             this.lblThang = new System.Windows.Forms.Label();
             this.lblTieuDe = new System.Windows.Forms.Label();
+            this.lblNgayKT = new System.Windows.Forms.Label();
+            this.dtpkNgayKT = new System.Windows.Forms.DateTimePicker();
             this.tabCtrlTKe.SuspendLayout();
             this.tabPageNgay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiNgay)).BeginInit();
@@ -80,10 +82,12 @@ namespace GUI_QLChiTieu
             // 
             // tabPageNgay
             // 
+            this.tabPageNgay.Controls.Add(this.dtpkNgayKT);
+            this.tabPageNgay.Controls.Add(this.lblNgayKT);
             this.tabPageNgay.Controls.Add(this.txtSoDuNgay);
             this.tabPageNgay.Controls.Add(this.txtChiNgay);
             this.tabPageNgay.Controls.Add(this.txtThuNgay);
-            this.tabPageNgay.Controls.Add(this.dtpkNgay);
+            this.tabPageNgay.Controls.Add(this.dtpkNgayBD);
             this.tabPageNgay.Controls.Add(this.dgvChiNgay);
             this.tabPageNgay.Controls.Add(this.dgvThuNgay);
             this.tabPageNgay.Controls.Add(this.lblCTKCNgay);
@@ -91,7 +95,7 @@ namespace GUI_QLChiTieu
             this.tabPageNgay.Controls.Add(this.lblSoDuNgay);
             this.tabPageNgay.Controls.Add(this.lblChiNgay);
             this.tabPageNgay.Controls.Add(this.lblThuNgay);
-            this.tabPageNgay.Controls.Add(this.lblNgay);
+            this.tabPageNgay.Controls.Add(this.lblNgayBD);
             this.tabPageNgay.Location = new System.Drawing.Point(4, 28);
             this.tabPageNgay.Margin = new System.Windows.Forms.Padding(4);
             this.tabPageNgay.Name = "tabPageNgay";
@@ -103,7 +107,9 @@ namespace GUI_QLChiTieu
             // 
             // txtSoDuNgay
             // 
-            this.txtSoDuNgay.Location = new System.Drawing.Point(722, 100);
+            this.txtSoDuNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoDuNgay.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtSoDuNgay.Location = new System.Drawing.Point(682, 100);
             this.txtSoDuNgay.Name = "txtSoDuNgay";
             this.txtSoDuNgay.ReadOnly = true;
             this.txtSoDuNgay.Size = new System.Drawing.Size(168, 26);
@@ -111,7 +117,9 @@ namespace GUI_QLChiTieu
             // 
             // txtChiNgay
             // 
-            this.txtChiNgay.Location = new System.Drawing.Point(722, 56);
+            this.txtChiNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChiNgay.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtChiNgay.Location = new System.Drawing.Point(682, 59);
             this.txtChiNgay.Name = "txtChiNgay";
             this.txtChiNgay.ReadOnly = true;
             this.txtChiNgay.Size = new System.Drawing.Size(168, 26);
@@ -119,21 +127,23 @@ namespace GUI_QLChiTieu
             // 
             // txtThuNgay
             // 
-            this.txtThuNgay.Location = new System.Drawing.Point(722, 14);
+            this.txtThuNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtThuNgay.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtThuNgay.Location = new System.Drawing.Point(682, 14);
             this.txtThuNgay.Name = "txtThuNgay";
             this.txtThuNgay.ReadOnly = true;
             this.txtThuNgay.Size = new System.Drawing.Size(168, 26);
             this.txtThuNgay.TabIndex = 3;
             // 
-            // dtpkNgay
+            // dtpkNgayBD
             // 
-            this.dtpkNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpkNgay.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkNgay.Location = new System.Drawing.Point(125, 17);
-            this.dtpkNgay.Name = "dtpkNgay";
-            this.dtpkNgay.Size = new System.Drawing.Size(200, 26);
-            this.dtpkNgay.TabIndex = 1;
-            this.dtpkNgay.ValueChanged += new System.EventHandler(this.dtpkNgay_ValueChanged);
+            this.dtpkNgayBD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayBD.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayBD.Location = new System.Drawing.Point(206, 17);
+            this.dtpkNgayBD.Name = "dtpkNgayBD";
+            this.dtpkNgayBD.Size = new System.Drawing.Size(200, 26);
+            this.dtpkNgayBD.TabIndex = 1;
+            this.dtpkNgayBD.ValueChanged += new System.EventHandler(this.dtpkNgayBD_ValueChanged);
             // 
             // dgvChiNgay
             // 
@@ -181,7 +191,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblSoDuNgay.AutoSize = true;
             this.lblSoDuNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblSoDuNgay.Location = new System.Drawing.Point(607, 103);
+            this.lblSoDuNgay.Location = new System.Drawing.Point(567, 103);
             this.lblSoDuNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblSoDuNgay.Name = "lblSoDuNgay";
             this.lblSoDuNgay.Size = new System.Drawing.Size(52, 19);
@@ -192,7 +202,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblChiNgay.AutoSize = true;
             this.lblChiNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChiNgay.Location = new System.Drawing.Point(607, 56);
+            this.lblChiNgay.Location = new System.Drawing.Point(567, 59);
             this.lblChiNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChiNgay.Name = "lblChiNgay";
             this.lblChiNgay.Size = new System.Drawing.Size(70, 19);
@@ -203,23 +213,23 @@ namespace GUI_QLChiTieu
             // 
             this.lblThuNgay.AutoSize = true;
             this.lblThuNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThuNgay.Location = new System.Drawing.Point(607, 17);
+            this.lblThuNgay.Location = new System.Drawing.Point(567, 17);
             this.lblThuNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThuNgay.Name = "lblThuNgay";
             this.lblThuNgay.Size = new System.Drawing.Size(73, 19);
             this.lblThuNgay.TabIndex = 2;
             this.lblThuNgay.Text = "Tổng Thu";
             // 
-            // lblNgay
+            // lblNgayBD
             // 
-            this.lblNgay.AutoSize = true;
-            this.lblNgay.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgay.Location = new System.Drawing.Point(20, 17);
-            this.lblNgay.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.lblNgay.Name = "lblNgay";
-            this.lblNgay.Size = new System.Drawing.Size(84, 19);
-            this.lblNgay.TabIndex = 0;
-            this.lblNgay.Text = "Chọn Ngày";
+            this.lblNgayBD.AutoSize = true;
+            this.lblNgayBD.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayBD.Location = new System.Drawing.Point(72, 17);
+            this.lblNgayBD.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNgayBD.Name = "lblNgayBD";
+            this.lblNgayBD.Size = new System.Drawing.Size(105, 19);
+            this.lblNgayBD.TabIndex = 0;
+            this.lblNgayBD.Text = "Ngày Bắt Đầu";
             // 
             // tabPageThang
             // 
@@ -246,7 +256,9 @@ namespace GUI_QLChiTieu
             // 
             // txtSoDuThang
             // 
-            this.txtSoDuThang.Location = new System.Drawing.Point(721, 103);
+            this.txtSoDuThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSoDuThang.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtSoDuThang.Location = new System.Drawing.Point(688, 103);
             this.txtSoDuThang.Name = "txtSoDuThang";
             this.txtSoDuThang.ReadOnly = true;
             this.txtSoDuThang.Size = new System.Drawing.Size(168, 26);
@@ -254,7 +266,9 @@ namespace GUI_QLChiTieu
             // 
             // txtChiThang
             // 
-            this.txtChiThang.Location = new System.Drawing.Point(721, 59);
+            this.txtChiThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtChiThang.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtChiThang.Location = new System.Drawing.Point(688, 59);
             this.txtChiThang.Name = "txtChiThang";
             this.txtChiThang.ReadOnly = true;
             this.txtChiThang.Size = new System.Drawing.Size(168, 26);
@@ -262,7 +276,9 @@ namespace GUI_QLChiTieu
             // 
             // txtThuThang
             // 
-            this.txtThuThang.Location = new System.Drawing.Point(721, 17);
+            this.txtThuThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtThuThang.ForeColor = System.Drawing.SystemColors.WindowText;
+            this.txtThuThang.Location = new System.Drawing.Point(688, 17);
             this.txtThuThang.Name = "txtThuThang";
             this.txtThuThang.ReadOnly = true;
             this.txtThuThang.Size = new System.Drawing.Size(168, 26);
@@ -270,9 +286,10 @@ namespace GUI_QLChiTieu
             // 
             // dtpkThang
             // 
+            this.dtpkThang.CalendarTitleBackColor = System.Drawing.SystemColors.ControlText;
             this.dtpkThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dtpkThang.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkThang.Location = new System.Drawing.Point(124, 20);
+            this.dtpkThang.Location = new System.Drawing.Point(189, 20);
             this.dtpkThang.Name = "dtpkThang";
             this.dtpkThang.Size = new System.Drawing.Size(200, 26);
             this.dtpkThang.TabIndex = 11;
@@ -280,6 +297,7 @@ namespace GUI_QLChiTieu
             // 
             // dgvChiThang
             // 
+            this.dgvChiThang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvChiThang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvChiThang.Location = new System.Drawing.Point(23, 353);
             this.dgvChiThang.Margin = new System.Windows.Forms.Padding(4);
@@ -289,6 +307,7 @@ namespace GUI_QLChiTieu
             // 
             // dgvThuThang
             // 
+            this.dgvThuThang.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvThuThang.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvThuThang.Location = new System.Drawing.Point(23, 155);
             this.dgvThuThang.Margin = new System.Windows.Forms.Padding(4);
@@ -322,7 +341,7 @@ namespace GUI_QLChiTieu
             // 
             this.llblSoDuThang.AutoSize = true;
             this.llblSoDuThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.llblSoDuThang.Location = new System.Drawing.Point(606, 106);
+            this.llblSoDuThang.Location = new System.Drawing.Point(573, 106);
             this.llblSoDuThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.llblSoDuThang.Name = "llblSoDuThang";
             this.llblSoDuThang.Size = new System.Drawing.Size(52, 19);
@@ -333,7 +352,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblChiThang.AutoSize = true;
             this.lblChiThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblChiThang.Location = new System.Drawing.Point(606, 59);
+            this.lblChiThang.Location = new System.Drawing.Point(573, 59);
             this.lblChiThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblChiThang.Name = "lblChiThang";
             this.lblChiThang.Size = new System.Drawing.Size(70, 19);
@@ -344,7 +363,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblThuThang.AutoSize = true;
             this.lblThuThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThuThang.Location = new System.Drawing.Point(606, 20);
+            this.lblThuThang.Location = new System.Drawing.Point(573, 20);
             this.lblThuThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThuThang.Name = "lblThuThang";
             this.lblThuThang.Size = new System.Drawing.Size(73, 19);
@@ -355,7 +374,7 @@ namespace GUI_QLChiTieu
             // 
             this.lblThang.AutoSize = true;
             this.lblThang.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblThang.Location = new System.Drawing.Point(19, 20);
+            this.lblThang.Location = new System.Drawing.Point(84, 20);
             this.lblThang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblThang.Name = "lblThang";
             this.lblThang.Size = new System.Drawing.Size(90, 19);
@@ -373,6 +392,26 @@ namespace GUI_QLChiTieu
             this.lblTieuDe.Size = new System.Drawing.Size(126, 31);
             this.lblTieuDe.TabIndex = 0;
             this.lblTieuDe.Text = "Thống Kê";
+            // 
+            // lblNgayKT
+            // 
+            this.lblNgayKT.AutoSize = true;
+            this.lblNgayKT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayKT.Location = new System.Drawing.Point(72, 80);
+            this.lblNgayKT.Name = "lblNgayKT";
+            this.lblNgayKT.Size = new System.Drawing.Size(111, 19);
+            this.lblNgayKT.TabIndex = 10;
+            this.lblNgayKT.Text = "Ngày Kết Thúc";
+            // 
+            // dtpkNgayKT
+            // 
+            this.dtpkNgayKT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayKT.Location = new System.Drawing.Point(206, 80);
+            this.dtpkNgayKT.Name = "dtpkNgayKT";
+            this.dtpkNgayKT.Size = new System.Drawing.Size(200, 26);
+            this.dtpkNgayKT.TabIndex = 11;
+            this.dtpkNgayKT.ValueChanged += new System.EventHandler(this.dtpkNgayKT_ValueChanged);
             // 
             // FrmThongKe
             // 
@@ -411,9 +450,9 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Label lblSoDuNgay;
         private System.Windows.Forms.Label lblChiNgay;
         private System.Windows.Forms.Label lblThuNgay;
-        private System.Windows.Forms.Label lblNgay;
+        private System.Windows.Forms.Label lblNgayBD;
         private System.Windows.Forms.Label lblTieuDe;
-        private System.Windows.Forms.DateTimePicker dtpkNgay;
+        private System.Windows.Forms.DateTimePicker dtpkNgayBD;
         private System.Windows.Forms.DataGridView dgvChiNgay;
         private System.Windows.Forms.DataGridView dgvThuNgay;
         private System.Windows.Forms.TextBox txtSoDuNgay;
@@ -431,5 +470,7 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Label lblChiThang;
         private System.Windows.Forms.Label lblThuThang;
         private System.Windows.Forms.Label lblThang;
+        private System.Windows.Forms.Label lblNgayKT;
+        private System.Windows.Forms.DateTimePicker dtpkNgayKT;
     }
 }
