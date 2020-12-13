@@ -116,7 +116,7 @@ namespace GUI_QLChiTieu
 
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
-            tuyChon.Hide();
+            tuyChon.Close();
 
             FrmDangNhap dn = new FrmDangNhap();
             dn.Show();

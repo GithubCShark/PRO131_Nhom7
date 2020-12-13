@@ -115,5 +115,10 @@ namespace GUI_QLChiTieu
                 }
             }
         }
+
+        private void btnHuy_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
     }
 }

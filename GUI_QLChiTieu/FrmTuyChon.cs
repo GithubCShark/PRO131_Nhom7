@@ -114,7 +114,7 @@ namespace GUI_QLChiTieu
 
         private void btnThoat_Click(object sender, EventArgs e)
         {
-            this.Close();
+            this.Hide();
         }
 
         public void SendMail(string email, string matKhau)

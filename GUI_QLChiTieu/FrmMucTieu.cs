@@ -37,7 +37,7 @@ namespace GUI_QLChiTieu
         {
             txtMaMT.Text = null;
             txtMTNgay.Text = null;
-            txMTThang.Text = null;
+            txtMTThang.Text = null;
             dtpkNgay.Value = DateTime.Today;
             txtMoTa.Text = null;
             txtMaMT.Enabled = false;
@@ -57,23 +57,35 @@ namespace GUI_QLChiTieu
             float soTienNgay;
             bool isfloatNgay = float.TryParse(txtMTNgay.Text.Trim().ToString(), out soTienNgay);
             float soTienThang;
-            bool isfloatThang = float.TryParse(txMTThang.Text.Trim().ToString(), out soTienThang);
+            bool isfloatThang = float.TryParse(txtMTThang.Text.Trim().ToString(), out soTienThang);
 
-            if (!isfloatNgay || float.Parse(txtMTNgay.Text) <0)
+            if (txtMTNgay.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập mục tiêu ngày", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtMTNgay.Focus();
                 return;
             }
-            else if (!isfloatThang || float.Parse(txMTThang.Text) < 0)
+            else if (!isfloatNgay || float.Parse(txtMTNgay.Text) <0)
+            {
+                MessageBox.Show("Mục tiêu ngày phải là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMTNgay.Focus();
+                return;
+            }
+            else if (txtMTThang.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập mục tiêu tháng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txMTThang.Focus();
+                txtMTThang.Focus();
+                return;
+            }
+            else if (!isfloatThang || float.Parse(txtMTThang.Text) < 0)
+            {
+                MessageBox.Show("Mục tiêu tháng phải là số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtMTThang.Focus();
                 return;
             }
             else
             {
-                DTO_MucTieu mt = new DTO_MucTieu(float.Parse(txtMTNgay.Text), float.Parse(txMTThang.Text), dtpkNgay.Value, txtMoTa.Text, stremail);
+                DTO_MucTieu mt = new DTO_MucTieu(float.Parse(txtMTNgay.Text), float.Parse(txtMTThang.Text), dtpkNgay.Value, txtMoTa.Text, stremail);
                 if (busMucTieu.InsertMucTieu(mt))
                 {
                     MessageBox.Show("Thêm mục tiêu thành công");
@@ -92,7 +104,7 @@ namespace GUI_QLChiTieu
             float soTienNgay;
             bool isfloatNgay = float.TryParse(txtMTNgay.Text.Trim().ToString(), out soTienNgay);
             float soTienThang;
-            bool isfloatThang = float.TryParse(txMTThang.Text.Trim().ToString(), out soTienThang);
+            bool isfloatThang = float.TryParse(txtMTThang.Text.Trim().ToString(), out soTienThang);
 
             if (!isfloatNgay || float.Parse(txtMTNgay.Text) < 0)
             {
@@ -100,15 +112,15 @@ namespace GUI_QLChiTieu
                 txtMTNgay.Focus();
                 return;
             }
-            else if (!isfloatThang || float.Parse(txMTThang.Text) < 0)
+            else if (!isfloatThang || float.Parse(txtMTThang.Text) < 0)
             {
                 MessageBox.Show("Bạn phải nhập mục tiêu tháng", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                txMTThang.Focus();
+                txtMTThang.Focus();
                 return;
             }
             else
             {
-                DTO_MucTieu mt = new DTO_MucTieu(txtMaMT.Text, float.Parse(txtMTNgay.Text), float.Parse(txMTThang.Text), dtpkNgay.Value, txtMoTa.Text);
+                DTO_MucTieu mt = new DTO_MucTieu(txtMaMT.Text, float.Parse(txtMTNgay.Text), float.Parse(txtMTThang.Text), dtpkNgay.Value, txtMoTa.Text);
                 if (busMucTieu.InsertMucTieu(mt))
                 {
                     MessageBox.Show("Sửa thành công");
@@ -150,7 +162,7 @@ namespace GUI_QLChiTieu
 
                 txtMaMT.Text = dgvMucTieu.CurrentRow.Cells["MaMT"].Value.ToString();
                 txtMTNgay.Text = dgvMucTieu.CurrentRow.Cells["MTNgay"].Value.ToString();
-                txMTThang.Text = dgvMucTieu.CurrentRow.Cells["MTThang"].Value.ToString();
+                txtMTThang.Text = dgvMucTieu.CurrentRow.Cells["MTThang"].Value.ToString();
                 dtpkNgay.Value = Convert.ToDateTime(dgvMucTieu.CurrentRow.Cells["Ngay"].Value);
                 txtMoTa.Text = dgvMucTieu.CurrentRow.Cells["MoTa"].Value.ToString();
             }

@@ -88,9 +88,15 @@ namespace GUI_QLChiTieu
                 txtKhoanThu.Focus();
                 return;
             }
-            else if (!isfloatThu || float.Parse(txtSoTien.Text) < 0)
+            else if (txtSoTien.Text.Trim().Length == 0)
             {
                 MessageBox.Show("Bạn phải nhập số tiền", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                txtSoTien.Focus();
+                return;
+            }
+            else if (!isfloatThu || float.Parse(txtSoTien.Text) < 0)
+            {
+                MessageBox.Show("Bạn phải nhập số", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 txtSoTien.Focus();
                 return;
             }

@@ -38,7 +38,7 @@ namespace GUI_QLChiTieu
             this.btnSua = new System.Windows.Forms.Button();
             this.btnXoa = new System.Windows.Forms.Button();
             this.txtMTNgay = new System.Windows.Forms.TextBox();
-            this.txMTThang = new System.Windows.Forms.TextBox();
+            this.txtMTThang = new System.Windows.Forms.TextBox();
             this.dtpkNgay = new System.Windows.Forms.DateTimePicker();
             this.dgvMucTieu = new System.Windows.Forms.DataGridView();
             this.lblMaMT = new System.Windows.Forms.Label();
@@ -138,12 +138,12 @@ namespace GUI_QLChiTieu
             this.txtMTNgay.Size = new System.Drawing.Size(190, 26);
             this.txtMTNgay.TabIndex = 4;
             // 
-            // txMTThang
+            // txtMTThang
             // 
-            this.txMTThang.Location = new System.Drawing.Point(282, 172);
-            this.txMTThang.Name = "txMTThang";
-            this.txMTThang.Size = new System.Drawing.Size(190, 26);
-            this.txMTThang.TabIndex = 6;
+            this.txtMTThang.Location = new System.Drawing.Point(282, 172);
+            this.txtMTThang.Name = "txtMTThang";
+            this.txtMTThang.Size = new System.Drawing.Size(190, 26);
+            this.txtMTThang.TabIndex = 6;
             // 
             // dtpkNgay
             // 
@@ -210,7 +210,7 @@ namespace GUI_QLChiTieu
             this.Controls.Add(this.lblMaMT);
             this.Controls.Add(this.dgvMucTieu);
             this.Controls.Add(this.dtpkNgay);
-            this.Controls.Add(this.txMTThang);
+            this.Controls.Add(this.txtMTThang);
             this.Controls.Add(this.txtMTNgay);
             this.Controls.Add(this.btnXoa);
             this.Controls.Add(this.btnSua);
@@ -242,7 +242,7 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Button btnSua;
         private System.Windows.Forms.Button btnXoa;
         private System.Windows.Forms.TextBox txtMTNgay;
-        private System.Windows.Forms.TextBox txMTThang;
+        private System.Windows.Forms.TextBox txtMTThang;
         private System.Windows.Forms.DateTimePicker dtpkNgay;
         private System.Windows.Forms.DataGridView dgvMucTieu;
         private System.Windows.Forms.Label lblMaMT;

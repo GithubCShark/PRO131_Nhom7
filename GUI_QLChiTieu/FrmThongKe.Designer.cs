@@ -32,6 +32,8 @@ namespace GUI_QLChiTieu
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmThongKe));
             this.tabCtrlTKe = new System.Windows.Forms.TabControl();
             this.tabPageNgay = new System.Windows.Forms.TabPage();
+            this.dtpkNgayKT = new System.Windows.Forms.DateTimePicker();
+            this.lblNgayKT = new System.Windows.Forms.Label();
             this.txtSoDuNgay = new System.Windows.Forms.TextBox();
             this.txtChiNgay = new System.Windows.Forms.TextBox();
             this.txtThuNgay = new System.Windows.Forms.TextBox();
@@ -58,8 +60,7 @@ namespace GUI_QLChiTieu
             this.lblThuThang = new System.Windows.Forms.Label();
             this.lblThang = new System.Windows.Forms.Label();
             this.lblTieuDe = new System.Windows.Forms.Label();
-            this.lblNgayKT = new System.Windows.Forms.Label();
-            this.dtpkNgayKT = new System.Windows.Forms.DateTimePicker();
+            this.btnExport = new System.Windows.Forms.Button();
             this.tabCtrlTKe.SuspendLayout();
             this.tabPageNgay.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvChiNgay)).BeginInit();
@@ -104,6 +105,26 @@ namespace GUI_QLChiTieu
             this.tabPageNgay.TabIndex = 0;
             this.tabPageNgay.Text = "Theo Ngày";
             this.tabPageNgay.UseVisualStyleBackColor = true;
+            // 
+            // dtpkNgayKT
+            // 
+            this.dtpkNgayKT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dtpkNgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dtpkNgayKT.Location = new System.Drawing.Point(206, 80);
+            this.dtpkNgayKT.Name = "dtpkNgayKT";
+            this.dtpkNgayKT.Size = new System.Drawing.Size(200, 26);
+            this.dtpkNgayKT.TabIndex = 11;
+            this.dtpkNgayKT.ValueChanged += new System.EventHandler(this.dtpkNgayKT_ValueChanged);
+            // 
+            // lblNgayKT
+            // 
+            this.lblNgayKT.AutoSize = true;
+            this.lblNgayKT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNgayKT.Location = new System.Drawing.Point(72, 80);
+            this.lblNgayKT.Name = "lblNgayKT";
+            this.lblNgayKT.Size = new System.Drawing.Size(111, 19);
+            this.lblNgayKT.TabIndex = 10;
+            this.lblNgayKT.Text = "Ngày Kết Thúc";
             // 
             // txtSoDuNgay
             // 
@@ -233,6 +254,7 @@ namespace GUI_QLChiTieu
             // 
             // tabPageThang
             // 
+            this.tabPageThang.Controls.Add(this.btnExport);
             this.tabPageThang.Controls.Add(this.txtSoDuThang);
             this.tabPageThang.Controls.Add(this.txtChiThang);
             this.tabPageThang.Controls.Add(this.txtThuThang);
@@ -393,25 +415,16 @@ namespace GUI_QLChiTieu
             this.lblTieuDe.TabIndex = 0;
             this.lblTieuDe.Text = "Thống Kê";
             // 
-            // lblNgayKT
+            // btnExport
             // 
-            this.lblNgayKT.AutoSize = true;
-            this.lblNgayKT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNgayKT.Location = new System.Drawing.Point(72, 80);
-            this.lblNgayKT.Name = "lblNgayKT";
-            this.lblNgayKT.Size = new System.Drawing.Size(111, 19);
-            this.lblNgayKT.TabIndex = 10;
-            this.lblNgayKT.Text = "Ngày Kết Thúc";
-            // 
-            // dtpkNgayKT
-            // 
-            this.dtpkNgayKT.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dtpkNgayKT.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpkNgayKT.Location = new System.Drawing.Point(206, 80);
-            this.dtpkNgayKT.Name = "dtpkNgayKT";
-            this.dtpkNgayKT.Size = new System.Drawing.Size(200, 26);
-            this.dtpkNgayKT.TabIndex = 11;
-            this.dtpkNgayKT.ValueChanged += new System.EventHandler(this.dtpkNgayKT_ValueChanged);
+            this.btnExport.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnExport.Location = new System.Drawing.Point(189, 75);
+            this.btnExport.Name = "btnExport";
+            this.btnExport.Size = new System.Drawing.Size(97, 30);
+            this.btnExport.TabIndex = 21;
+            this.btnExport.Text = "Xuất File";
+            this.btnExport.UseVisualStyleBackColor = true;
+            this.btnExport.Click += new System.EventHandler(this.btnExport_Click);
             // 
             // FrmThongKe
             // 
@@ -472,5 +485,6 @@ namespace GUI_QLChiTieu
         private System.Windows.Forms.Label lblThang;
         private System.Windows.Forms.Label lblNgayKT;
         private System.Windows.Forms.DateTimePicker dtpkNgayKT;
+        private System.Windows.Forms.Button btnExport;
     }
 }
